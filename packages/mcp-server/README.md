@@ -4,32 +4,17 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
-### Building
+### Direct invocation
 
-Because it's not published yet, clone the repo and build it:
-
-```sh
-git clone git@github.com:andreibesleaga/ocm-sdk.git
-cd ocm-sdk
-./scripts/bootstrap
-./scripts/build
-```
-
-### Running
+You can run the MCP Server directly via `npx`:
 
 ```sh
-# set env vars as needed
 export OCM_API_KEY="My API Key"
 export OCM_USERNAME="My Username"
-node ./packages/mcp-server/dist/index.js
+npx -y ocm-mcp@latest
 ```
 
-> [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npx -y ocm-mcp`
-
 ### Via MCP Client
-
-[Build the project](#building) as mentioned above.
 
 There is a partial list of existing clients at [modelcontextprotocol.io](https://modelcontextprotocol.io/clients). If you already
 have a client, consult their documentation to install the MCP server.
@@ -40,8 +25,8 @@ For clients with a configuration JSON, it might look something like this:
 {
   "mcpServers": {
     "ocm_api": {
-      "command": "node",
-      "args": ["/path/to/local/ocm-sdk/packages/mcp-server", "--client=claude", "--tools=all"],
+      "command": "npx",
+      "args": ["-y", "ocm-mcp", "--client=claude", "--tools=all"],
       "env": {
         "OCM_API_KEY": "My API Key",
         "OCM_USERNAME": "My Username"
