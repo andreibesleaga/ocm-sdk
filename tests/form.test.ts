@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'ocm/internal/uploads';
-import { toFile } from 'ocm/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'ocm-sdk/internal/uploads';
+import { toFile } from 'ocm-sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

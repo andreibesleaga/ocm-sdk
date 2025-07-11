@@ -55,12 +55,12 @@ $ cd ocm-sdk
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link ocm
+$ yarn link ocm-sdk
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global ocm
+$ pnpm link -—global ocm-sdk
 ```
 
 ## Running tests

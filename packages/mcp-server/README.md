@@ -24,7 +24,7 @@ For clients with a configuration JSON, it might look something like this:
 ```json
 {
   "mcpServers": {
-    "ocm_api": {
+    "ocm_sdk_api": {
       "command": "npx",
       "args": ["-y", "ocm-mcp", "--client=claude", "--tools=all"],
       "env": {
