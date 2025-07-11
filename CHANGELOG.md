@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-beta (2025-07-11)
+
+Full Changelog: [v0.1.0-alpha.2...v0.1.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.1.0-alpha.2...v0.1.0-beta)
+
+### Chores
+
+* update SDK settings ([89812ed](https://github.com/andreibesleaga/ocm-sdk/commit/89812ed25e79f3198e969941b5b49d4938513ecb))
+
 ## 0.1.0-alpha.2 (2025-07-11)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/andreibesleaga/ocm-sdk/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
