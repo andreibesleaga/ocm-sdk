@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'ocm/core/api-promise';
+import { APIPromise } from 'ocm-sdk/core/api-promise';
 
 import util from 'node:util';
-import Ocm from 'ocm';
-import { APIUserAbortError } from 'ocm';
+import Ocm from 'ocm-sdk';
+import { APIUserAbortError } from 'ocm-sdk';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

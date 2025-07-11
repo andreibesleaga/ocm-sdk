@@ -4,7 +4,7 @@ import { asTextContentResult } from 'ocm-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import type { Metadata } from '../';
-import Ocm from 'ocm';
+import Ocm from 'ocm-sdk';
 
 export const metadata: Metadata = {
   resource: 'poi',

@@ -4,8 +4,8 @@ import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
 import { Endpoint, endpoints, HandlerFunction, query } from './tools';
 import { CallToolRequestSchema, ListToolsRequestSchema, Tool } from '@modelcontextprotocol/sdk/types.js';
-import { ClientOptions } from 'ocm';
-import Ocm from 'ocm';
+import { ClientOptions } from 'ocm-sdk';
+import Ocm from 'ocm-sdk';
 import {
   applyCompatibilityTransformations,
   ClientCapabilities,
@@ -19,14 +19,14 @@ import { McpOptions } from './options';
 export { McpOptions } from './options';
 export { ClientType } from './compat';
 export { Filter } from './tools';
-export { ClientOptions } from 'ocm';
+export { ClientOptions } from 'ocm-sdk';
 export { endpoints } from './tools';
 
 // Create server instance
 export const server = new McpServer(
   {
-    name: 'ocm_api',
-    version: '0.1.0-alpha.2',
+    name: 'ocm_sdk_api',
+    version: '0.1.0-beta',
   },
   {
     capabilities: {
