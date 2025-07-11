@@ -9,8 +9,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 Because it's not published yet, clone the repo and build it:
 
 ```sh
-git clone git@github.com:stainless-sdks/ocm-typescript.git
-cd ocm-typescript
+git clone git@github.com:andreibesleaga/ocm-sdk.git
+cd ocm-sdk
 ./scripts/bootstrap
 ./scripts/build
 ```
@@ -41,7 +41,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "ocm_api": {
       "command": "node",
-      "args": ["/path/to/local/ocm-typescript/packages/mcp-server", "--client=claude", "--tools=all"],
+      "args": ["/path/to/local/ocm-sdk/packages/mcp-server", "--client=claude", "--tools=all"],
       "env": {
         "OCM_API_KEY": "My API Key",
         "OCM_USERNAME": "My Username"
