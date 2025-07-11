@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0-alpha.2 (2025-07-11)
+
+Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/andreibesleaga/ocm-sdk/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
+
+### Features
+
+* **api:** update via SDK Studio ([4b5c399](https://github.com/andreibesleaga/ocm-sdk/commit/4b5c3998937c2759552b038ac980297c9ea52a34))
+
 ## 0.1.0-alpha.1 (2025-07-11)
 
 Full Changelog: [v0.0.1-alpha.0...v0.1.0-alpha.1](https://github.com/andreibesleaga/ocm-sdk/compare/v0.0.1-alpha.0...v0.1.0-alpha.1)
