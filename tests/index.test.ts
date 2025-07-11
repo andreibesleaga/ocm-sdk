@@ -23,6 +23,7 @@ describe('instantiate client', () => {
     const client = new Ocm({
       baseURL: 'http://localhost:5000/',
       defaultHeaders: { 'X-My-Default-Header': '2' },
+      apiKey: 'test',
     });
 
     test('they are used in the request', async () => {
