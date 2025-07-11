@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Ocm from 'ocm';
+import Ocm from 'ocm-sdk';
 
 const client = new Ocm({
   apiKey: 'My API Key',

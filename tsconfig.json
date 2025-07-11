@@ -9,8 +9,8 @@
     "esModuleInterop": true,
     "baseUrl": "./",
     "paths": {
-      "ocm/*": ["src/*"],
-      "ocm": ["src/index.ts"]
+      "ocm-sdk/*": ["src/*"],
+      "ocm-sdk": ["src/index.ts"]
     },
     "noEmit": true,
 
