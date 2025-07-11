@@ -25,7 +25,9 @@ The full API of this library can be found in [api.md](api.md).
 ```js
 import Ocm from 'ocm';
 
-const client = new Ocm();
+const client = new Ocm({
+  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted
+});
 
 const pois = await client.poi.list();
 ```
@@ -38,7 +40,9 @@ This library includes TypeScript definitions for all request params and response
 ```ts
 import Ocm from 'ocm';
 
-const client = new Ocm();
+const client = new Ocm({
+  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted
+});
 
 const pois: Ocm.PoiListResponse = await client.poi.list();
 ```

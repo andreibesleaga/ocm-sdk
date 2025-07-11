@@ -215,41 +215,17 @@ export class Ocm {
   }
 
   protected defaultQuery(): Record<string, string | undefined> | undefined {
-    return this._options.defaultQuery;
+    return {
+      key: this.apiKey ?? undefined,
+      ...this._options.defaultQuery,
+    };
   }
 
   protected validateHeaders({ values, nulls }: NullableHeaders) {
-    if (this.apiKey && values.get('x-api-key')) {
-      return;
-    }
-    if (nulls.has('x-api-key')) {
-      return;
-    }
-
-    if (this.username && values.get('authorization')) {
-      return;
-    }
-    if (nulls.has('authorization')) {
-      return;
-    }
-
-    throw new Error(
-      'Could not resolve authentication method. Expected either apiKey or username to be set. Or for one of the "X-API-Key" or "Authorization" headers to be explicitly omitted',
-    );
+    return;
   }
 
   protected async authHeaders(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
-    return buildHeaders([await this.apiKeyHeaderAuth(opts), await this.userAuthentication(opts)]);
-  }
-
-  protected async apiKeyHeaderAuth(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
-    if (this.apiKey == null) {
-      return undefined;
-    }
-    return buildHeaders([{ 'X-API-Key': this.apiKey }]);
-  }
-
-  protected async userAuthentication(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
     if (this.username == null) {
       return undefined;
     }
