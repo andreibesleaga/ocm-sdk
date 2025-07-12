@@ -48,9 +48,14 @@ export interface ClientOptions {
   apiKey?: string | null | undefined;
 
   /**
+   * Defaults to process.env['OCM_API_KEY'].
+   */
+  apiKeyHeader?: string | null | undefined;
+
+  /**
    * Defaults to process.env['OCM_USERNAME'].
    */
-  username?: string | null | undefined;
+  bearer?: string | null | undefined;
 
   /**
    * Override the default base URL for the API, e.g., "https://api.example.com/v2/"
@@ -126,7 +131,8 @@ export interface ClientOptions {
  */
 export class Ocm {
   apiKey: string | null;
-  username: string | null;
+  apiKeyHeader: string | null;
+  bearer: string | null;
 
   baseURL: string;
   maxRetries: number;
@@ -144,7 +150,8 @@ export class Ocm {
    * API Client for interfacing with the Ocm API.
    *
    * @param {string | null | undefined} [opts.apiKey=process.env['OCM_API_KEY'] ?? null]
-   * @param {string | null | undefined} [opts.username=process.env['OCM_USERNAME'] ?? null]
+   * @param {string | null | undefined} [opts.apiKeyHeader=process.env['OCM_API_KEY'] ?? null]
+   * @param {string | null | undefined} [opts.bearer=process.env['OCM_USERNAME'] ?? null]
    * @param {string} [opts.baseURL=process.env['OCM_BASE_URL'] ?? https://api.openchargemap.io/v3] - Override the default base URL for the API.
    * @param {number} [opts.timeout=1 minute] - The maximum amount of time (in milliseconds) the client will wait for a response before timing out.
    * @param {MergedRequestInit} [opts.fetchOptions] - Additional `RequestInit` options to be passed to `fetch` calls.
@@ -156,12 +163,14 @@ export class Ocm {
   constructor({
     baseURL = readEnv('OCM_BASE_URL'),
     apiKey = readEnv('OCM_API_KEY') ?? null,
-    username = readEnv('OCM_USERNAME') ?? null,
+    apiKeyHeader = readEnv('OCM_API_KEY') ?? null,
+    bearer = readEnv('OCM_USERNAME') ?? null,
     ...opts
   }: ClientOptions = {}) {
     const options: ClientOptions = {
       apiKey,
-      username,
+      apiKeyHeader,
+      bearer,
       ...opts,
       baseURL: baseURL || `https://api.openchargemap.io/v3`,
     };
@@ -184,7 +193,8 @@ export class Ocm {
     this._options = options;
 
     this.apiKey = apiKey;
-    this.username = username;
+    this.apiKeyHeader = apiKeyHeader;
+    this.bearer = bearer;
   }
 
   /**
@@ -201,7 +211,8 @@ export class Ocm {
       fetch: this.fetch,
       fetchOptions: this.fetchOptions,
       apiKey: this.apiKey,
-      username: this.username,
+      apiKeyHeader: this.apiKeyHeader,
+      bearer: this.bearer,
       ...options,
     });
     return client;
@@ -226,10 +237,21 @@ export class Ocm {
   }
 
   protected async authHeaders(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
-    if (this.username == null) {
+    return buildHeaders([await this.apiKeyHeaderAuth(opts), await this.userAuthentication(opts)]);
+  }
+
+  protected async apiKeyHeaderAuth(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
+    if (this.apiKeyHeader == null) {
       return undefined;
     }
-    return buildHeaders([{ Authorization: `Bearer ${this.username}` }]);
+    return buildHeaders([{ 'X-API-Key': this.apiKeyHeader }]);
+  }
+
+  protected async userAuthentication(opts: FinalRequestOptions): Promise<NullableHeaders | undefined> {
+    if (this.bearer == null) {
+      return undefined;
+    }
+    return buildHeaders([{ Authorization: `Bearer ${this.bearer}` }]);
   }
 
   protected stringifyQuery(query: Record<string, unknown>): string {

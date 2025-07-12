@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.2.0-beta (2025-07-12)
+
+Full Changelog: [v0.1.0-beta...v0.2.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.1.0-beta...v0.2.0-beta)
+
+### Features
+
+* **api:** update via SDK Studio ([6de4168](https://github.com/andreibesleaga/ocm-sdk/commit/6de4168447ffca0e31a879e674100ee99b422d22))
+
+
+### Documentation
+
+* **mcp:** correct instructions for adding to claude web ([d0fdb6e](https://github.com/andreibesleaga/ocm-sdk/commit/d0fdb6ec8d71a17b2885e59e256913a38caaf2f8))
+
 ## 0.1.0-beta (2025-07-11)
 
 Full Changelog: [v0.1.0-alpha.2...v0.1.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.1.0-alpha.2...v0.1.0-beta)
