@@ -10,7 +10,8 @@ You can run the MCP Server directly via `npx`:
 
 ```sh
 export OCM_API_KEY="My API Key"
-export OCM_USERNAME="My Username"
+export OCM_API_KEY="My API Key Header"
+export OCM_USERNAME="My Bearer"
 npx -y ocm-mcp@latest
 ```
 
@@ -29,7 +30,8 @@ For clients with a configuration JSON, it might look something like this:
       "args": ["-y", "ocm-mcp", "--client=claude", "--tools=all"],
       "env": {
         "OCM_API_KEY": "My API Key",
-        "OCM_USERNAME": "My Username"
+        "OCM_API_KEY": "My API Key Header",
+        "OCM_USERNAME": "My Bearer"
       }
     }
   }
