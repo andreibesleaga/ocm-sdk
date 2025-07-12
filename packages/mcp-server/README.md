@@ -1,6 +1,6 @@
-# Ocm TypeScript MCP Server
+# OCM TypeScript MCP Server
 
-It is generated with [Stainless](https://www.stainless.com/).
+A Model Context Protocol (MCP) server implementation for OCM (Open Charge Map) services, enabling AI assistants to interact with EV charging infrastructure.
 
 ## Installation
 
