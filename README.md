@@ -6,6 +6,8 @@ This library provides convenient access to the OCM REST API from server-side Typ
 
 (OCM SDK & AI MCP Server Implementation for EV Charging - Open Charge Map API)
 
+The library contains a packages/mcp-server for OCM MCP AI communication server.
+
 The REST API documentation can be found on [openchargemap.org](https://openchargemap.org/site/about). The full API of this library can be found in [api.md](api.md).
 
 
