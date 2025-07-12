@@ -1,12 +1,13 @@
-# Ocm TypeScript API Library
+# OCM TypeScript API Library
 
 [![NPM version](<https://img.shields.io/npm/v/ocm-sdk.svg?label=npm%20(stable)>)](https://npmjs.org/package/ocm-sdk) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/ocm-sdk)
 
-This library provides convenient access to the Ocm REST API from server-side TypeScript or JavaScript.
+This library provides convenient access to the OCM REST API from server-side TypeScript or JavaScript.
+
+(OCM SDK & AI MCP Server Implementation for EV Charging - Open Charge Map API)
 
 The REST API documentation can be found on [openchargemap.org](https://openchargemap.org/site/about). The full API of this library can be found in [api.md](api.md).
 
-It is generated with [Stainless](https://www.stainless.com/).
 
 ## Installation
 
