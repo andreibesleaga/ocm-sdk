@@ -161,6 +161,7 @@ export const tool: Tool = {
         description: 'Set to false to get a smaller result set with null items removed.',
       },
     },
+    required: [],
   },
 };
 
