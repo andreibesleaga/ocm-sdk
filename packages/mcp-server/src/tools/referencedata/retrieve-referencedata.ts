@@ -30,6 +30,7 @@ export const tool: Tool = {
         },
       },
     },
+    required: [],
   },
 };
 
