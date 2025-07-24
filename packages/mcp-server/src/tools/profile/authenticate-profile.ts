@@ -37,6 +37,7 @@ export const tool: Tool = {
     },
     required: [],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Ocm, args: Record<string, unknown> | undefined) => {

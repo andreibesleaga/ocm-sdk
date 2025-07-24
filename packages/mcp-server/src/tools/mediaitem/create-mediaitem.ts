@@ -43,6 +43,7 @@ export const tool: Tool = {
     },
     required: ['chargePointID', 'imageDataBase64'],
   },
+  annotations: {},
 };
 
 export const handler = async (client: Ocm, args: Record<string, unknown> | undefined) => {
