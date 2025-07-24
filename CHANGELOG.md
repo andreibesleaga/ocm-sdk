@@ -1,5 +1,22 @@
 # Changelog
 
+## 0.3.1-beta (2025-07-24)
+
+Full Changelog: [v0.3.0-beta...v0.3.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.3.0-beta...v0.3.1-beta)
+
+### Bug Fixes
+
+* **mcp:** include required section for top-level properties and support naming transformations ([3c09cb9](https://github.com/andreibesleaga/ocm-sdk/commit/3c09cb988c36782a382ce56cc09e6d791cfb508f))
+* **mcp:** support jq filtering on cloudflare workers ([7ac9590](https://github.com/andreibesleaga/ocm-sdk/commit/7ac95906b7a006242b08d7deddc31d00d0d0fc53))
+
+
+### Chores
+
+* **internal:** codegen related update ([b947912](https://github.com/andreibesleaga/ocm-sdk/commit/b9479121c67e2f5b7f0af6e2968dc206233ce374))
+* **mcp:** formatting ([ae5efed](https://github.com/andreibesleaga/ocm-sdk/commit/ae5efed9564de047fc205f3fb5ba9288553c9b36))
+* **mcp:** rework imports in tools ([cd171d1](https://github.com/andreibesleaga/ocm-sdk/commit/cd171d16363cbb6b1634ec21f9c68cf3fe26165e))
+* **ts:** reorder package.json imports ([5627c7d](https://github.com/andreibesleaga/ocm-sdk/commit/5627c7da99b5e74217cd958e777a08425e965d0b))
+
 ## 0.3.0-beta (2025-07-12)
 
 Full Changelog: [v0.2.0-beta...v0.3.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.2.0-beta...v0.3.0-beta)
