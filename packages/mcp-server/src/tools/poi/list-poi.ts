@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'ocm-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'ocm-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import Ocm from 'ocm-sdk';
 
 export const metadata: Metadata = {
@@ -162,6 +161,10 @@ export const tool: Tool = {
         description: 'Set to false to get a smaller result set with null items removed.',
       },
     },
+    required: [],
+  },
+  annotations: {
+    readOnlyHint: true,
   },
 };
 
