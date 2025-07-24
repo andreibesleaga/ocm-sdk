@@ -32,6 +32,9 @@ export const tool: Tool = {
     },
     required: [],
   },
+  annotations: {
+    readOnlyHint: true,
+  },
 };
 
 export const handler = async (client: Ocm, args: Record<string, unknown> | undefined) => {
