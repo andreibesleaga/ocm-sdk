@@ -1,9 +1,8 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { asTextContentResult } from 'ocm-mcp/tools/types';
+import { Metadata, asTextContentResult } from 'ocm-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
-import type { Metadata } from '../';
 import Ocm from 'ocm-sdk';
 
 export const metadata: Metadata = {
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'list_poi',
   description:
-    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nUsed to fetch a list of POIs (sites) within a geographic boundary or near a specific latitude/longitude. This is the primary method for most applications and services to consume data from Open Charge Map.",
+    'Used to fetch a list of POIs (sites) within a geographic boundary or near a specific latitude/longitude. This is the primary method for most applications and services to consume data from Open Charge Map.',
   inputSchema: {
     type: 'object',
     properties: {
@@ -162,6 +161,10 @@ export const tool: Tool = {
         description: 'Set to false to get a smaller result set with null items removed.',
       },
     },
+    required: [],
+  },
+  annotations: {
+    readOnlyHint: true,
   },
 };
 
