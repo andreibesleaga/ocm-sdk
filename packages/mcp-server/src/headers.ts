@@ -21,7 +21,7 @@ export const parseAuthHeaders = (req: IncomingMessage): Partial<ClientOptions> =
       req.headers['x-ocm-api-key'][0]
     : req.headers['x-ocm-api-key'];
   const apiKeyHeader =
-    req.headers['X-API-Key'] instanceof Array ? req.headers['X-API-Key'][0] : req.headers['X-API-Key'];
+    req.headers['x-api-key'] instanceof Array ? req.headers['x-api-key'][0] : req.headers['x-api-key'];
   const bearer =
     req.headers['x-ocm-username'] instanceof Array ?
       req.headers['x-ocm-username'][0]
