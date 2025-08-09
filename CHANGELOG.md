@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.2-beta (2025-08-09)
+
+Full Changelog: [v0.3.1-beta...v0.3.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.3.1-beta...v0.3.2-beta)
+
+### Chores
+
+* update @stainless-api/prism-cli to v5.15.0 ([2700d5c](https://github.com/andreibesleaga/ocm-sdk/commit/2700d5c428c51d3e561e3fce4ee249c272cbcfaf))
+
 ## 0.3.1-beta (2025-08-07)
 
 Full Changelog: [v0.3.0-beta...v0.3.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.3.0-beta...v0.3.1-beta)
