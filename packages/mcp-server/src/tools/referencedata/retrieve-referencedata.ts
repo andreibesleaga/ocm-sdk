@@ -27,6 +27,7 @@ export const tool: Tool = {
           'Optional filter on countryid, exact match on a given numeric country id (comma separated list)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
     },

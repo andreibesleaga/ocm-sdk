@@ -8,7 +8,7 @@ const client = new Ocm({
 });
 
 describe('resource openAPI', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.openAPI.retrieve();
     const rawResponse = await responsePromise.asResponse();

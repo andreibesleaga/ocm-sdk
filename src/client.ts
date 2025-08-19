@@ -749,12 +749,14 @@ export class Ocm {
   mediaitem: API.Mediaitem = new API.Mediaitem(this);
   openAPI: API.OpenAPI = new API.OpenAPI(this);
 }
+
 Ocm.Poi = Poi;
 Ocm.Referencedata = Referencedata;
 Ocm.Profile = Profile;
 Ocm.Comment = Comment;
 Ocm.Mediaitem = Mediaitem;
 Ocm.OpenAPI = OpenAPI;
+
 export declare namespace Ocm {
   export type RequestOptions = Opts.RequestOptions;
 
