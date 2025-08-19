@@ -17,13 +17,13 @@ export const parseAuthHeaders = (req: IncomingMessage): Partial<ClientOptions> =
   }
 
   const apiKey =
-    req.headers['x-ocm-api-key'] instanceof Array ?
+    Array.isArray(req.headers['x-ocm-api-key']) ?
       req.headers['x-ocm-api-key'][0]
     : req.headers['x-ocm-api-key'];
   const apiKeyHeader =
-    req.headers['x-api-key'] instanceof Array ? req.headers['x-api-key'][0] : req.headers['x-api-key'];
+    Array.isArray(req.headers['x-api-key']) ? req.headers['x-api-key'][0] : req.headers['x-api-key'];
   const bearer =
-    req.headers['x-ocm-username'] instanceof Array ?
+    Array.isArray(req.headers['x-ocm-username']) ?
       req.headers['x-ocm-username'][0]
     : req.headers['x-ocm-username'];
   return { apiKey, apiKeyHeader, bearer };
