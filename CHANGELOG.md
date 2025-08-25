@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.5.0-beta (2025-08-24)
+
+Full Changelog: [v0.4.0-beta...v0.5.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.4.0-beta...v0.5.0-beta)
+
+### Features
+
+* **mcp:** add code execution tool ([2c777bd](https://github.com/andreibesleaga/ocm-sdk/commit/2c777bd06e690b1a4d9e2b7abc57527e50f77dcc))
+* **mcp:** add option to infer mcp client ([11a5d07](https://github.com/andreibesleaga/ocm-sdk/commit/11a5d07d983cd312fa9ad4fb4468558bc17d7337))
+
+
+### Chores
+
+* add package to package.json ([282bfe9](https://github.com/andreibesleaga/ocm-sdk/commit/282bfe9102d32eea41dee7428a7c3d19215475b0))
+* **client:** qualify global Blob ([ce473a8](https://github.com/andreibesleaga/ocm-sdk/commit/ce473a881d3f43e58c6fd15881c659707eb5464d))
+* **internal:** codegen related update ([801426a](https://github.com/andreibesleaga/ocm-sdk/commit/801426a3307912644cd45cab2603a62238e2b1ac))
+* **internal:** codegen related update ([3ba22ff](https://github.com/andreibesleaga/ocm-sdk/commit/3ba22ff613e92e1498c8928e7848ce63bcd60449))
+* **internal:** make mcp-server publishing public by defaut ([428dbbf](https://github.com/andreibesleaga/ocm-sdk/commit/428dbbf478b2052d24ea307acf3e1cce42e61036))
+* **mcp:** add cors to oauth metadata route ([3ded89f](https://github.com/andreibesleaga/ocm-sdk/commit/3ded89f0d484f25ef73573e9e70d33bdc29290c1))
+* **mcp:** update package.json ([14686fc](https://github.com/andreibesleaga/ocm-sdk/commit/14686fc6cc5b344027117805b038354913edac2d))
+* **mcp:** update types ([3229ec8](https://github.com/andreibesleaga/ocm-sdk/commit/3229ec8c4c601f81b30d0a8b1b076fb0ed783454))
+* update CI script ([96e3796](https://github.com/andreibesleaga/ocm-sdk/commit/96e37967ab60b95104e8c528cb7fa10e36867f15))
+
 ## 0.4.0-beta (2025-08-19)
 
 Full Changelog: [v0.3.1-beta...v0.4.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.3.1-beta...v0.4.0-beta)
