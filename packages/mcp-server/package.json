@@ -1,7 +1,7 @@
 {
   "name": "ocm-mcp",
   "version": "0.3.1-beta",
-  "description": "The official MCP Server for the Ocm API",
+  "description": "MCP Server for the Ocm API",
   "author": "Ocm <>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
