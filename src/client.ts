@@ -703,7 +703,7 @@ export class Ocm {
         // Preserve legacy string encoding behavior for now
         headers.values.has('content-type')) ||
       // `Blob` is superset of `File`
-      body instanceof Blob ||
+      ((globalThis as any).Blob && body instanceof (globalThis as any).Blob) ||
       // `FormData` -> `multipart/form-data`
       body instanceof FormData ||
       // `URLSearchParams` -> `application/x-www-form-urlencoded`
@@ -749,12 +749,14 @@ export class Ocm {
   mediaitem: API.Mediaitem = new API.Mediaitem(this);
   openAPI: API.OpenAPI = new API.OpenAPI(this);
 }
+
 Ocm.Poi = Poi;
 Ocm.Referencedata = Referencedata;
 Ocm.Profile = Profile;
 Ocm.Comment = Comment;
 Ocm.Mediaitem = Mediaitem;
 Ocm.OpenAPI = OpenAPI;
+
 export declare namespace Ocm {
   export type RequestOptions = Opts.RequestOptions;
 

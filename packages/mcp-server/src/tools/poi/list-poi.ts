@@ -27,6 +27,7 @@ export const tool: Tool = {
           'Filter results to a given bounding box. specify top left and bottom right box corners as: (lat,lng),(lat2,lng2)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       camelcase: {
@@ -52,6 +53,7 @@ export const tool: Tool = {
         description: 'Exact match on a given connection type id (comma separated list)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       countrycode: {
@@ -70,6 +72,7 @@ export const tool: Tool = {
         description: 'Exact match on a given data provider id id (comma separated list). ',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       distance: {
@@ -97,6 +100,7 @@ export const tool: Tool = {
         description: 'Exact match on a given charging level (1-3) id (comma separated list)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       longitude: {
@@ -120,6 +124,7 @@ export const tool: Tool = {
         description: 'Exact match on a given EVSE operator id (comma separated list)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       output: {
@@ -147,6 +152,7 @@ export const tool: Tool = {
         description: 'Exact match on a given status type id (comma separated list)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       usagetypeid: {
@@ -154,6 +160,7 @@ export const tool: Tool = {
         description: 'Exact match on a given usage type id (comma separated list)',
         items: {
           type: 'object',
+          additionalProperties: true,
         },
       },
       verbose: {
