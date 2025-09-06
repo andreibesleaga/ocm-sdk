@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.6.0-beta (2025-09-06)
+
+Full Changelog: [v0.5.1-beta...v0.6.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.5.1-beta...v0.6.0-beta)
+
+### Features
+
+* **mcp:** add client infer to cloudflare oauth screen ([095b7a8](https://github.com/andreibesleaga/ocm-sdk/commit/095b7a89942e105970fce25482af58dc0998af72))
+* **mcp:** allow setting logging level ([69f7f7f](https://github.com/andreibesleaga/ocm-sdk/commit/69f7f7f333455d74e9cf8ae365354b9dcdd7f7e3))
+* **mcp:** expose client options in `streamableHTTPApp` ([0524896](https://github.com/andreibesleaga/ocm-sdk/commit/05248966d8d69b6bbcbfcd2704668064a35207ec))
+
+
+### Bug Fixes
+
+* **mcp:** fix query options parsing ([d073915](https://github.com/andreibesleaga/ocm-sdk/commit/d07391505a9b737508a8e92d2b0e9f4f9b399eb2))
+
+
+### Chores
+
+* ci build action ([8834296](https://github.com/andreibesleaga/ocm-sdk/commit/88342967660197e0c7ae708cbd4c333c03a02466))
+* **internal:** codegen related update ([1d5ea1e](https://github.com/andreibesleaga/ocm-sdk/commit/1d5ea1ec7936719e78efba0586917927055ae139))
+* **internal:** codegen related update ([41533d7](https://github.com/andreibesleaga/ocm-sdk/commit/41533d7b230de42abe3f82cc27163e8069628dd6))
+* **internal:** update global Error reference ([8869c9e](https://github.com/andreibesleaga/ocm-sdk/commit/8869c9e754051735c29fb3a1a0daebf4fe9ecb67))
+
 ## 0.5.1-beta (2025-08-25)
 
 Full Changelog: [v0.5.0-beta...v0.5.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.5.0-beta...v0.5.1-beta)
