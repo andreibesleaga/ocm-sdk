@@ -4,8 +4,7 @@
   "version": "0.6.0-beta",
   "description": "The official MCP Server for the Ocm API",
   "author": {
-    "name": "Ocm",
-    "email": ""
+    "name": "Ocm"
   },
   "repository": {
     "type": "git",
