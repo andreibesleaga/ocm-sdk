@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.6.1-beta (2025-09-09)
+
+Full Changelog: [v0.6.0-beta...v0.6.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.6.0-beta...v0.6.1-beta)
+
+### Bug Fixes
+
+* coerce nullable values to undefined ([6146945](https://github.com/andreibesleaga/ocm-sdk/commit/614694518339d48847b93efecc213416e303dc17))
+* **mcp:** update dxt manifest.json files ([d2df3e3](https://github.com/andreibesleaga/ocm-sdk/commit/d2df3e359526c10381ec20108a0eb57a16206bec))
+
 ## 0.6.0-beta (2025-09-06)
 
 Full Changelog: [v0.5.1-beta...v0.6.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.5.1-beta...v0.6.0-beta)
