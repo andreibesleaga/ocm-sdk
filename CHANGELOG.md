@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.6.2-beta (2025-09-12)
+
+Full Changelog: [v0.6.1-beta...v0.6.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.6.1-beta...v0.6.2-beta)
+
+### Bug Fixes
+
+* **mcp:** fix uploading dxt release assets ([2104460](https://github.com/andreibesleaga/ocm-sdk/commit/21044607a980270b5f26a321f23c85246ed4a413))
+
+
+### Chores
+
+* **mcp:** upload dxt as release asset ([faaf0f6](https://github.com/andreibesleaga/ocm-sdk/commit/faaf0f6047f98dd99fa6ccebbcc82c5c38091f67))
+
 ## 0.6.1-beta (2025-09-09)
 
 Full Changelog: [v0.6.0-beta...v0.6.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.6.0-beta...v0.6.1-beta)
