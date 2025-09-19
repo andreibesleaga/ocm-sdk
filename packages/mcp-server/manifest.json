@@ -1,5 +1,5 @@
 {
-  "dxt_version": "0.1",
+  "dxt_version": "0.2",
   "name": "ocm-mcp",
   "version": "0.5.1-beta",
   "description": "The official MCP Server for the Ocm API",
@@ -14,7 +14,7 @@
   "documentation": "https://openchargemap.org/site/about",
   "server": {
     "type": "node",
-    "entry_point": "${__dirname}/index.js",
+    "entry_point": "index.js",
     "mcp_config": {
       "command": "node",
       "args": ["${__dirname}/index.js"],
@@ -45,6 +45,7 @@
       "type": "string"
     }
   },
+  "tools": [],
   "tools_generated": true,
   "compatibility": {
     "runtimes": {
