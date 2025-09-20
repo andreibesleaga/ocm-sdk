@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.7.0-beta (2025-09-20)
+
+Full Changelog: [v0.6.2-beta...v0.7.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.6.2-beta...v0.7.0-beta)
+
+### Features
+
+* **mcp:** add docs search tool ([8faacce](https://github.com/andreibesleaga/ocm-sdk/commit/8faacced19307dceda58164cb4bc329d986125b3))
+
+
+### Bug Fixes
+
+* **ci:** set permissions for DXT publish action ([6c75ced](https://github.com/andreibesleaga/ocm-sdk/commit/6c75cedb3fa6f06f1ea3d94cb43a1741b698105b))
+
+
+### Chores
+
+* **codegen:** internal codegen update ([43cbdc1](https://github.com/andreibesleaga/ocm-sdk/commit/43cbdc171458b01f89e44aa82fd4af67b4242a7c))
+* do not install brew dependencies in ./scripts/bootstrap by default ([fc0604a](https://github.com/andreibesleaga/ocm-sdk/commit/fc0604ad65e6a83848c939f87ffa64ede48ebfb8))
+* **internal:** codegen related update ([6944a6b](https://github.com/andreibesleaga/ocm-sdk/commit/6944a6b0f3591d334078a9155601b0127f7c62b9))
+
 ## 0.6.2-beta (2025-09-12)
 
 Full Changelog: [v0.6.1-beta...v0.6.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.6.1-beta...v0.6.2-beta)
