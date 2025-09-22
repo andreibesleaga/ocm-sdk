@@ -1,1 +1,1 @@
-export const VERSION = '0.6.2-beta'; // x-release-please-version
+export const VERSION = '0.7.0-beta'; // x-release-please-version
