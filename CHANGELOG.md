@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.0-beta (2025-09-24)
+
+Full Changelog: [v0.7.0-beta...v0.8.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.7.0-beta...v0.8.0-beta)
+
+### Features
+
+* **mcp:** add option for including docs tools ([45be1ec](https://github.com/andreibesleaga/ocm-sdk/commit/45be1ec26a405147314ce2ab7725c539f91acf20))
+* **mcp:** enable experimental docs search tool ([9a5c0dd](https://github.com/andreibesleaga/ocm-sdk/commit/9a5c0dd7e49ccd65688236c5f7c5c3cd1ca85120))
+
 ## 0.7.0-beta (2025-09-20)
 
 Full Changelog: [v0.6.2-beta...v0.7.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.6.2-beta...v0.7.0-beta)
