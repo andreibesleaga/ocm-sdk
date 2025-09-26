@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "ocm-sdk/*": ["dist/src/*"],
-      "ocm-sdk": ["dist/src/index.ts"]
+      "ocm-sdk/*": ["./dist/src/*"],
+      "ocm-sdk": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,
