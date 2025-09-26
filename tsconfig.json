@@ -7,10 +7,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "./",
     "paths": {
-      "ocm-sdk/*": ["src/*"],
-      "ocm-sdk": ["src/index.ts"]
+      "ocm-sdk/*": ["./src/*"],
+      "ocm-sdk": ["./src/index.ts"]
     },
     "noEmit": true,
 
