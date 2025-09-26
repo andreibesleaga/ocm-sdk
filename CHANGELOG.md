@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.8.1-beta (2025-09-26)
+
+Full Changelog: [v0.8.0-beta...v0.8.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.0-beta...v0.8.1-beta)
+
+### Performance Improvements
+
+* faster formatting ([37e7cff](https://github.com/andreibesleaga/ocm-sdk/commit/37e7cff39548fed07038b3e868dd330aca0506dc))
+
+
+### Chores
+
+* **internal:** remove deprecated `compilerOptions.baseUrl` from tsconfig.json ([8b26401](https://github.com/andreibesleaga/ocm-sdk/commit/8b26401fc2d758b84f5699ce5742c59f7d68618e))
+
 ## 0.8.0-beta (2025-09-24)
 
 Full Changelog: [v0.7.0-beta...v0.8.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.7.0-beta...v0.8.0-beta)
