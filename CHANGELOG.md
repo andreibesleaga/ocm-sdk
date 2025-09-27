@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.8.2-beta (2025-09-27)
+
+Full Changelog: [v0.8.1-beta...v0.8.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.1-beta...v0.8.2-beta)
+
+### Chores
+
+* **internal:** fix incremental formatting in some cases ([01df910](https://github.com/andreibesleaga/ocm-sdk/commit/01df910fdd9a1af87045d379926484065164633b))
+
 ## 0.8.1-beta (2025-09-26)
 
 Full Changelog: [v0.8.0-beta...v0.8.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.0-beta...v0.8.1-beta)
