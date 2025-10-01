@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.8.3-beta (2025-10-01)
+
+Full Changelog: [v0.8.2-beta...v0.8.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.2-beta...v0.8.3-beta)
+
+### Bug Fixes
+
+* **mcp:** fix cli argument parsing logic ([d281b31](https://github.com/andreibesleaga/ocm-sdk/commit/d281b318f9741232c159b3e88a1cd36cea6a6c9b))
+* **mcp:** resolve a linting issue in server code ([3202108](https://github.com/andreibesleaga/ocm-sdk/commit/3202108f32bbd2c0b7d563e92b53dde7e61fbdab))
+
+
+### Chores
+
+* **internal:** codegen related update ([cc5f436](https://github.com/andreibesleaga/ocm-sdk/commit/cc5f43619aea0b995ad6e51f51c70148666e764a))
+* **internal:** ignore .eslintcache ([d3f5ede](https://github.com/andreibesleaga/ocm-sdk/commit/d3f5ede713b4c677df1159b375dad7ded8bac177))
+* **mcp:** allow pointing `docs_search` tool at other URLs ([5b27151](https://github.com/andreibesleaga/ocm-sdk/commit/5b27151298c7302e51b0ee39c53e0a69d2135d77))
+
 ## 0.8.2-beta (2025-09-27)
 
 Full Changelog: [v0.8.1-beta...v0.8.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.1-beta...v0.8.2-beta)
