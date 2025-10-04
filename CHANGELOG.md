@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.8.3-beta (2025-10-04)
+
+Full Changelog: [v0.8.2-beta...v0.8.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.2-beta...v0.8.3-beta)
+
+### Bug Fixes
+
+* **mcp:** fix cli argument parsing logic ([d281b31](https://github.com/andreibesleaga/ocm-sdk/commit/d281b318f9741232c159b3e88a1cd36cea6a6c9b))
+* **mcp:** resolve a linting issue in server code ([3202108](https://github.com/andreibesleaga/ocm-sdk/commit/3202108f32bbd2c0b7d563e92b53dde7e61fbdab))
+
+
+### Chores
+
+* **internal:** codegen related update ([cc5f436](https://github.com/andreibesleaga/ocm-sdk/commit/cc5f43619aea0b995ad6e51f51c70148666e764a))
+* **internal:** ignore .eslintcache ([d3f5ede](https://github.com/andreibesleaga/ocm-sdk/commit/d3f5ede713b4c677df1159b375dad7ded8bac177))
+* **jsdoc:** fix [@link](https://github.com/link) annotations to refer only to parts of the package‘s public interface ([a909570](https://github.com/andreibesleaga/ocm-sdk/commit/a909570361c77aa9914295ee1c759165548e62e9))
+* **mcp:** allow pointing `docs_search` tool at other URLs ([5b27151](https://github.com/andreibesleaga/ocm-sdk/commit/5b27151298c7302e51b0ee39c53e0a69d2135d77))
+* update lockfile ([18e7a38](https://github.com/andreibesleaga/ocm-sdk/commit/18e7a38cb8eb8e1ce9a0fdacc3f1d0d74289d262))
+
 ## 0.8.2-beta (2025-09-27)
 
 Full Changelog: [v0.8.1-beta...v0.8.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.1-beta...v0.8.2-beta)
