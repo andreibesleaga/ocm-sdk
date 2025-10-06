@@ -1,7 +1,7 @@
 {
   "dxt_version": "0.2",
   "name": "ocm-mcp",
-  "version": "0.8.2-beta",
+  "version": "0.8.3-beta",
   "description": "The official MCP Server for the Ocm API",
   "author": {
     "name": "Ocm"
