@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.8.4-beta (2025-10-09)
+
+Full Changelog: [v0.8.3-beta...v0.8.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.3-beta...v0.8.4-beta)
+
+### Chores
+
+* extract some types in mcp docs ([0d185ea](https://github.com/andreibesleaga/ocm-sdk/commit/0d185eac66daec85801b07630c585a545672d392))
+* **internal:** use npm pack for build uploads ([b0789d8](https://github.com/andreibesleaga/ocm-sdk/commit/b0789d8a13ba055f7e662ff5bdd32aa980787df2))
+
 ## 0.8.3-beta (2025-10-04)
 
 Full Changelog: [v0.8.2-beta...v0.8.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.2-beta...v0.8.3-beta)

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const tool: Tool = {
   name: 'submit_comment',
   description:
-    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nSubmit a user comment or checkin for a specific charging location\n\n# Response Schema\n```json\n{\n  type: 'object',\n  properties: {\n    description: {\n      type: 'string'\n    },\n    status: {\n      type: 'string'\n    }\n  },\n  required: [    'description',\n    'status'\n  ]\n}\n```",
+    "When using this tool, always use the `jq_filter` parameter to reduce the response size and improve performance.\n\nOnly omit if you're sure you don't need the data.\n\nSubmit a user comment or checkin for a specific charging location\n\n# Response Schema\n```json\n{\n  $ref: '#/$defs/comment_submit_response',\n  $defs: {\n    comment_submit_response: {\n      type: 'object',\n      properties: {\n        description: {\n          type: 'string'\n        },\n        status: {\n          type: 'string'\n        }\n      },\n      required: [        'description',\n        'status'\n      ]\n    }\n  }\n}\n```",
   inputSchema: {
     type: 'object',
     properties: {
