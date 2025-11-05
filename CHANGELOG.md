@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.9.0-beta (2025-11-05)
+
+Full Changelog: [v0.8.4-beta...v0.9.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.4-beta...v0.9.0-beta)
+
+### Features
+
+* **mcp:** enable optional code execution tool on http mcp servers ([ce5826c](https://github.com/andreibesleaga/ocm-sdk/commit/ce5826c80ca1e60ea3360af97d2dfb4d7333f711))
+
+
+### Bug Fixes
+
+* **mcpb:** pin @anthropic-ai/mcpb version ([b28b2dc](https://github.com/andreibesleaga/ocm-sdk/commit/b28b2dc3d1eff6540fa76629de6fd02d4528ddbb))
+
+
+### Chores
+
+* **internal:** grammar fix (it's -&gt; its) ([d8cb424](https://github.com/andreibesleaga/ocm-sdk/commit/d8cb424bdeec662b55a61b951578a38418b3b97e))
+* mcp code tool explicit error message when missing a run function ([739b2be](https://github.com/andreibesleaga/ocm-sdk/commit/739b2befb5d9cf950579f90f59a5684361275387))
+* use structured error when code execution tool errors ([4d5e1b6](https://github.com/andreibesleaga/ocm-sdk/commit/4d5e1b690bfa4fec10d5886a43e99becf3b0f292))
+
 ## 0.8.4-beta (2025-10-09)
 
 Full Changelog: [v0.8.3-beta...v0.8.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.3-beta...v0.8.4-beta)
