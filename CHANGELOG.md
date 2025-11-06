@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.9.1-beta (2025-11-06)
+
+Full Changelog: [v0.9.0-beta...v0.9.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.9.0-beta...v0.9.1-beta)
+
+### Chores
+
+* **internal:** codegen related update ([a836eb9](https://github.com/andreibesleaga/ocm-sdk/commit/a836eb9d855e88128f98404881ec33a93d88b1c3))
+* **mcp:** add friendlier MCP code tool errors on incorrect method invocations ([27fe8f7](https://github.com/andreibesleaga/ocm-sdk/commit/27fe8f77ecaf3d55b4207aa24e5b20ffd6ba62c9))
+* **mcp:** add line numbers to code tool errors ([0fb67e9](https://github.com/andreibesleaga/ocm-sdk/commit/0fb67e93eb6da17b60053219be48c50d931d1b96))
+
+
+### Documentation
+
+* **mcp:** add a README button for one-click add to Cursor ([0d18d21](https://github.com/andreibesleaga/ocm-sdk/commit/0d18d21714056f399a326141341250a8ec310a3e))
+
 ## 0.9.0-beta (2025-11-05)
 
 Full Changelog: [v0.8.4-beta...v0.9.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.8.4-beta...v0.9.0-beta)
