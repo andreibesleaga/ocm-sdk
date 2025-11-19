@@ -45,6 +45,22 @@ in Cursor's `mcp.json`, which can be found in Cursor Settings > Tools & MCP > Ne
 
 [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=ocm-mcp&config=eyJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIm9jbS1tY3AiXSwiZW52Ijp7Ik9DTV9BUElfS0VZIjoiU2V0IHlvdXIgT0NNX0FQSV9LRVkgaGVyZS4iLCJPQ01fVVNFUk5BTUUiOiJTZXQgeW91ciBPQ01fVVNFUk5BTUUgaGVyZS4ifX0)
 
+### VS Code
+
+If you use MCP, you can install the MCP server by clicking the link below. You will need to set your environment variables
+in VS Code's `mcp.json`, which can be found via Command Palette > MCP: Open User Configuration.
+
+[Open VS Code](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22ocm-mcp%22%2C%22command%22%3A%22npx%22%2C%22args%22%3A%5B%22-y%22%2C%22ocm-mcp%22%5D%2C%22env%22%3A%7B%22OCM_API_KEY%22%3A%22Set%20your%20OCM_API_KEY%20here.%22%2C%22OCM_USERNAME%22%3A%22Set%20your%20OCM_USERNAME%20here.%22%7D%7D)
+
+### Claude Code
+
+If you use Claude Code, you can install the MCP server by running the command below in your terminal. You will need to set your
+environment variables in Claude Code's `.claude.json`, which can be found in your home directory.
+
+```
+claude mcp add --transport stdio ocm_sdk_api --env OCM_API_KEY="Your OCM_API_KEY here." OCM_API_KEY="Your OCM_API_KEY here." OCM_USERNAME="Your OCM_USERNAME here." -- npx -y ocm-mcp
+```
+
 ## Exposing endpoints to your MCP Client
 
 There are three ways to expose endpoints as tools in the MCP server:
