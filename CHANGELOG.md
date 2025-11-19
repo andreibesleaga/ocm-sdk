@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.9.2-beta (2025-11-19)
+
+Full Changelog: [v0.9.1-beta...v0.9.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.9.1-beta...v0.9.2-beta)
+
+### Bug Fixes
+
+* **mcp:** return tool execution error on jq failure ([c90e601](https://github.com/andreibesleaga/ocm-sdk/commit/c90e6019b9b2f696b6b4700d5de6dc0e8b02f738))
+
+
+### Chores
+
+* **internal:** codegen related update ([f5afca7](https://github.com/andreibesleaga/ocm-sdk/commit/f5afca7933ec9a0363980d16f9cedb4a8588c6ac))
+* **internal:** configure MCP Server hosting ([e4662c8](https://github.com/andreibesleaga/ocm-sdk/commit/e4662c8d8bf6056d88348557a1dea97be74f8ae3))
+* **mcp:** clarify http auth error ([1a969a3](https://github.com/andreibesleaga/ocm-sdk/commit/1a969a36ed478a9c978d22c7fa07a7873f3fae32))
+* **mcp:** upgrade jq-web ([c9798b4](https://github.com/andreibesleaga/ocm-sdk/commit/c9798b48253fef3b7fd40c0ca5244e1857f6ddab))
+
+
+### Documentation
+
+* **mcp:** add a README link to add server to VS Code or Claude Code ([64b9486](https://github.com/andreibesleaga/ocm-sdk/commit/64b94861b528df9d657c9c6e7697ae018ae51b01))
+
 ## 0.9.1-beta (2025-11-06)
 
 Full Changelog: [v0.9.0-beta...v0.9.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.9.0-beta...v0.9.1-beta)
