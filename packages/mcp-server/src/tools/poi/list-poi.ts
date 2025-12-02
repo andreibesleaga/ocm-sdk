@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { Metadata, asTextContentResult } from 'ocm-mcp/tools/types';
+import { Metadata, asErrorResult, asTextContentResult } from 'ocm-mcp/tools/types';
 
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import Ocm from 'ocm-sdk';
@@ -177,7 +177,14 @@ export const tool: Tool = {
 
 export const handler = async (client: Ocm, args: Record<string, unknown> | undefined) => {
   const body = args as any;
-  return asTextContentResult(await client.poi.list(body));
+  try {
+    return asTextContentResult(await client.poi.list(body));
+  } catch (error) {
+    if (error instanceof Ocm.APIError) {
+      return asErrorResult(error.message);
+    }
+    throw error;
+  }
 };
 
 export default { metadata, tool, handler };
