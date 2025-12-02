@@ -45,7 +45,7 @@ export const handler = async (client: Ocm, args: Record<string, unknown> | undef
   try {
     return asTextContentResult(await maybeFilter(jq_filter, await client.profile.authenticate(body)));
   } catch (error) {
-    if (isJqError(error)) {
+    if (error instanceof Ocm.APIError || isJqError(error)) {
       return asErrorResult(error.message);
     }
     throw error;
