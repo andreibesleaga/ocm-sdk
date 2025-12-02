@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.10.0-beta (2025-12-02)
+
+Full Changelog: [v0.9.2-beta...v0.10.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.9.2-beta...v0.10.0-beta)
+
+### Features
+
+* **mcp:** add detail field to docs search tool ([452c90d](https://github.com/andreibesleaga/ocm-sdk/commit/452c90dc3e4fa4ccd7ff9e09ecf7be247701d9c3))
+* **mcp:** return logs on code tool errors ([305acb0](https://github.com/andreibesleaga/ocm-sdk/commit/305acb03e9de016b314e5b217e96e1596b82abfb))
+
+
+### Bug Fixes
+
+* **mcp:** return tool execution error on api error ([a1b6fee](https://github.com/andreibesleaga/ocm-sdk/commit/a1b6fee86425cb7baed9b4c312d3093cda534788))
+
+
+### Chores
+
+* **client:** fix logger property type ([0c49e8e](https://github.com/andreibesleaga/ocm-sdk/commit/0c49e8eeb27e1eb8501cbd87d4f917aa8c80154a))
+
 ## 0.9.2-beta (2025-11-19)
 
 Full Changelog: [v0.9.1-beta...v0.9.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.9.1-beta...v0.9.2-beta)
