@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.11.0-beta (2025-12-06)
+
+Full Changelog: [v0.10.0-beta...v0.11.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.10.0-beta...v0.11.0-beta)
+
+### Features
+
+* **mcp:** add typescript check to code execution tool ([d1ed835](https://github.com/andreibesleaga/ocm-sdk/commit/d1ed835071449119a7e09975627c149f8631a564))
+* **mcp:** handle code mode calls in the Stainless API ([eca1d6e](https://github.com/andreibesleaga/ocm-sdk/commit/eca1d6e8d10ab807ac2997aa5608d6a9d806a09c))
+
+
+### Bug Fixes
+
+* **mcp:** correct code tool API endpoint ([4e63950](https://github.com/andreibesleaga/ocm-sdk/commit/4e63950895b20d587e28a1c607fc364b977d170c))
+* **mcp:** return correct lines on typescript errors ([6a4cb41](https://github.com/andreibesleaga/ocm-sdk/commit/6a4cb418f15ff50ac8987f5349cffeb92b12d49c))
+
+
+### Chores
+
+* **internal:** codegen related update ([d18ca40](https://github.com/andreibesleaga/ocm-sdk/commit/d18ca40de14b6bdd51dceb38eb870438765e5e26))
+* **internal:** codegen related update ([91f854a](https://github.com/andreibesleaga/ocm-sdk/commit/91f854a2bc3cbb5b2babde34f7257d815e50f5fd))
+* **internal:** upgrade eslint ([830e20b](https://github.com/andreibesleaga/ocm-sdk/commit/830e20bac5462fed93eb68f6b3f7398a5c23c430))
+* use latest @modelcontextprotocol/sdk ([ffadbda](https://github.com/andreibesleaga/ocm-sdk/commit/ffadbda01d622160d4000e7dc70eb7ef12f4904c))
+
 ## 0.10.0-beta (2025-12-02)
 
 Full Changelog: [v0.9.2-beta...v0.10.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.9.2-beta...v0.10.0-beta)

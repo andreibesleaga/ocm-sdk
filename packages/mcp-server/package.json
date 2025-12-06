@@ -1,6 +1,6 @@
 {
   "name": "ocm-mcp",
-  "version": "0.10.0-beta",
+  "version": "0.11.0-beta",
   "description": "MCP Server for the Ocm API",
   "author": "Ocm <>",
   "types": "dist/index.d.ts",
@@ -32,7 +32,7 @@
   "dependencies": {
     "ocm-sdk": "file:../../dist/",
     "@cloudflare/cabidela": "^0.2.4",
-    "@modelcontextprotocol/sdk": "^1.11.5",
+    "@modelcontextprotocol/sdk": "^1.24.0",
     "@valtown/deno-http-worker": "^0.0.21",
     "cors": "^2.8.5",
     "express": "^5.1.0",
