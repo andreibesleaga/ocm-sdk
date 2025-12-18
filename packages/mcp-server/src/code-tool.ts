@@ -38,10 +38,12 @@ export async function codeTool() {
         client_envs: JSON.stringify({
           OCM_API_KEY: readEnv('OCM_API_KEY'),
           OCM_USERNAME: readEnv('OCM_USERNAME'),
+          OCM_BASE_URL: readEnv('OCM_BASE_URL'),
         }),
       },
       body: JSON.stringify({
         project_name: 'ocm',
+        client_opts: {},
         code,
       }),
     });
