@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.11.1-beta (2025-12-18)
+
+Full Changelog: [v0.11.0-beta...v0.11.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.11.0-beta...v0.11.1-beta)
+
+### Bug Fixes
+
+* **mcp:** add client instantiation options to code tool ([32680b6](https://github.com/andreibesleaga/ocm-sdk/commit/32680b654c5c2c6c982c3fe673159e1506215213))
+* **mcp:** pass base url to code tool ([c396b27](https://github.com/andreibesleaga/ocm-sdk/commit/c396b27c1e882fbfe8e2581ee64d5dcda65948de))
+
+
+### Chores
+
+* **mcp:** update lockfile ([d1fb2ab](https://github.com/andreibesleaga/ocm-sdk/commit/d1fb2ab54e797fcb90931350b063e1bfdea29740))
+
 ## 0.11.0-beta (2025-12-06)
 
 Full Changelog: [v0.10.0-beta...v0.11.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.10.0-beta...v0.11.0-beta)
