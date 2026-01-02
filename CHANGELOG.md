@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.12.0-beta (2025-12-19)
+
+Full Changelog: [v0.11.1-beta...v0.12.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.11.1-beta...v0.12.0-beta)
+
+### ⚠ BREAKING CHANGES
+
+* **mcp:** remove deprecated tool schemes
+* **mcp:** **Migration:** To migrate, simply modify the command used to invoke the MCP server. Currently, the only supported tool scheme is code mode. Now, starting the server with just `node /path/to/mcp/server` or `npx package-name` will invoke code tools: changing your command to one of these is likely all you will need to do.
+
+### Chores
+
+* **mcp:** remove deprecated tool schemes ([5f13785](https://github.com/andreibesleaga/ocm-sdk/commit/5f13785460958ad0506cd36cfd25865973ccbb9b))
+
 ## 0.11.1-beta (2025-12-18)
 
 Full Changelog: [v0.11.0-beta...v0.11.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.11.0-beta...v0.11.1-beta)
