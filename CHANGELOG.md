@@ -1,5 +1,37 @@
 # Changelog
 
+## 0.12.1-beta (2026-01-17)
+
+Full Changelog: [v0.12.0-beta...v0.12.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.0-beta...v0.12.1-beta)
+
+### Bug Fixes
+
+* **mcp:** correct code tool api output types ([6a49bfb](https://github.com/andreibesleaga/ocm-sdk/commit/6a49bfb03dada51ec200e04641644af02dc57ef3))
+* **mcp:** fix options parsing ([4b0c318](https://github.com/andreibesleaga/ocm-sdk/commit/4b0c318037fe99876c6beccefff5f85336545bbd))
+* **mcp:** update cloudflare worker host page ([22c70f1](https://github.com/andreibesleaga/ocm-sdk/commit/22c70f1488b784a19e10c1f712d50fbf03905ba2))
+* **mcp:** update code tool prompt ([0035c99](https://github.com/andreibesleaga/ocm-sdk/commit/0035c9931396f7c5dc35c781f29911d479ce2561))
+
+
+### Chores
+
+* break long lines in snippets into multiline ([0357b8c](https://github.com/andreibesleaga/ocm-sdk/commit/0357b8c9fe6471f9176571d206d792075c25890e))
+* **internal:** bump MCP dependencies ([e6be204](https://github.com/andreibesleaga/ocm-sdk/commit/e6be204ae3f1fd7c4c38d287b9440026dea4d869))
+* **internal:** codegen related update ([8ba1959](https://github.com/andreibesleaga/ocm-sdk/commit/8ba1959bbc29de32f086fe6c6c98a522816462ed))
+* **internal:** codegen related update ([b89227d](https://github.com/andreibesleaga/ocm-sdk/commit/b89227d80ed525b4c4adb83938c443df412e2a43))
+* **internal:** codegen related update ([40c07c2](https://github.com/andreibesleaga/ocm-sdk/commit/40c07c285c0d0cafc80f9159ab15db0defe61793))
+* **internal:** codegen related update ([6139186](https://github.com/andreibesleaga/ocm-sdk/commit/6139186cf5e4bc1b9685c1b06eccec506fb7b673))
+* **internal:** fix dockerfile ([fe42664](https://github.com/andreibesleaga/ocm-sdk/commit/fe4266440816e3fe787eebdeb136aac81c7092ee))
+* **internal:** update `actions/checkout` version ([c581b86](https://github.com/andreibesleaga/ocm-sdk/commit/c581b863ca55344b486da0c0be0074974dccbb1a))
+* **internal:** upgrade babel, qs, js-yaml ([0d8727c](https://github.com/andreibesleaga/ocm-sdk/commit/0d8727ca6319f708c9f3b14ff2096c57777d7dbf))
+* **mcp:** add intent param to execute tool ([1be2a57](https://github.com/andreibesleaga/ocm-sdk/commit/1be2a57da0127419eafc4ef76d2c6797062345d7))
+* **mcp:** pass intent param to execute handler ([3a060db](https://github.com/andreibesleaga/ocm-sdk/commit/3a060dbd871a2b45fc81592ce8dba9c6d542319e))
+* **mcp:** upgrade dependencies ([cbfb45c](https://github.com/andreibesleaga/ocm-sdk/commit/cbfb45c9528cf354157e7316906195e54b48709d))
+
+
+### Documentation
+
+* prominently feature MCP server setup in root SDK readmes ([469810d](https://github.com/andreibesleaga/ocm-sdk/commit/469810d06774ea9da323cadf4b0c072cb0c5541a))
+
 ## 0.12.0-beta (2025-12-19)
 
 Full Changelog: [v0.11.1-beta...v0.12.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.11.1-beta...v0.12.0-beta)
