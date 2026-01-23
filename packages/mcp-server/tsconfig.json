@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "ocm-mcp/*": ["./src/*"],
-      "ocm-mcp": ["./src/index.ts"]
+      "ocm-sdk-mcp/*": ["./src/*"],
+      "ocm-sdk-mcp": ["./src/index.ts"]
     },
     "noEmit": true,
 
