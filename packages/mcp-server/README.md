@@ -12,7 +12,7 @@ You can run the MCP Server directly via `npx`:
 export OCM_API_KEY="My API Key"
 export OCM_API_KEY="My API Key Header"
 export OCM_USERNAME="My Bearer"
-npx -y ocm-mcp@latest
+npx -y ocm-sdk-mcp@latest
 ```
 
 ### Via MCP Client
@@ -27,7 +27,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "ocm_sdk_api": {
       "command": "npx",
-      "args": ["-y", "ocm-mcp"],
+      "args": ["-y", "ocm-sdk-mcp"],
       "env": {
         "OCM_API_KEY": "My API Key",
         "OCM_API_KEY": "My API Key Header",
@@ -43,14 +43,14 @@ For clients with a configuration JSON, it might look something like this:
 If you use Cursor, you can install the MCP server by using the button below. You will need to set your environment variables
 in Cursor's `mcp.json`, which can be found in Cursor Settings > Tools & MCP > New MCP Server.
 
-[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=ocm-mcp&config=eyJuYW1lIjoib2NtLW1jcCIsInRyYW5zcG9ydCI6InNzZSIsInVybCI6Imh0dHBzOi8vb2NtLW1jcC5zdGxtY3AuY29tL3NzZSIsImVudiI6eyJPQ01fQVBJX0tFWSI6IlNldCB5b3VyIE9DTV9BUElfS0VZIGhlcmUuIiwiT0NNX1VTRVJOQU1FIjoiU2V0IHlvdXIgT0NNX1VTRVJOQU1FIGhlcmUuIn19)
+[![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](https://cursor.com/en-US/install-mcp?name=ocm-sdk-mcp&config=eyJuYW1lIjoib2NtLXNkay1tY3AiLCJ0cmFuc3BvcnQiOiJzc2UiLCJ1cmwiOiJodHRwczovL29jbS1tY3Auc3RsbWNwLmNvbS9zc2UiLCJlbnYiOnsiT0NNX0FQSV9LRVkiOiJTZXQgeW91ciBPQ01fQVBJX0tFWSBoZXJlLiIsIk9DTV9VU0VSTkFNRSI6IlNldCB5b3VyIE9DTV9VU0VSTkFNRSBoZXJlLiJ9fQ)
 
 ### VS Code
 
 If you use MCP, you can install the MCP server by clicking the link below. You will need to set your environment variables
 in VS Code's `mcp.json`, which can be found via Command Palette > MCP: Open User Configuration.
 
-[Open VS Code](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22ocm-mcp%22%2C%22type%22%3A%22sse%22%2C%22url%22%3A%22https%3A%2F%2Focm-mcp.stlmcp.com%2Fsse%22%2C%22env%22%3A%7B%22OCM_API_KEY%22%3A%22Set%20your%20OCM_API_KEY%20here.%22%2C%22OCM_USERNAME%22%3A%22Set%20your%20OCM_USERNAME%20here.%22%7D%7D)
+[Open VS Code](https://vscode.stainless.com/mcp/%7B%22name%22%3A%22ocm-sdk-mcp%22%2C%22type%22%3A%22sse%22%2C%22url%22%3A%22https%3A%2F%2Focm-mcp.stlmcp.com%2Fsse%22%2C%22env%22%3A%7B%22OCM_API_KEY%22%3A%22Set%20your%20OCM_API_KEY%20here.%22%2C%22OCM_USERNAME%22%3A%22Set%20your%20OCM_USERNAME%20here.%22%7D%7D)
 
 ### Claude Code
 
@@ -58,7 +58,7 @@ If you use Claude Code, you can install the MCP server by running the command be
 environment variables in Claude Code's `.claude.json`, which can be found in your home directory.
 
 ```
-claude mcp add ocm_mcp_api --env OCM_API_KEY="Your OCM_API_KEY here." OCM_API_KEY="Your OCM_API_KEY here." OCM_USERNAME="Your OCM_USERNAME here." --transport sse https://ocm-mcp.stlmcp.com/sse
+claude mcp add ocm_sdk_mcp_api --env OCM_API_KEY="Your OCM_API_KEY here." OCM_API_KEY="Your OCM_API_KEY here." OCM_USERNAME="Your OCM_USERNAME here." --transport sse https://ocm-mcp.stlmcp.com/sse
 ```
 
 ## Code Mode
