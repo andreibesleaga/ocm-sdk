@@ -11,7 +11,7 @@ The library contains a packages/mcp-server for OCM MCP AI communication server.
 The REST API documentation can be found on [openchargemap.org](https://openchargemap.org/site/about). The full API of this library can be found in [api.md](api.md).
 
 Demo project: https://github.com/andreibesleaga/ocm-demo
-Live Demo URL: https://ocm-demo.onrender.com/
+Live Demo URL: https://ocm-demo.up.railway.app/
 
 ## MCP Server
 
