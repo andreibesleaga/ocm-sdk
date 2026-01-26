@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.12.4-beta (2026-01-24)
+
+Full Changelog: [v0.12.3-beta...v0.12.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.3-beta...v0.12.4-beta)
+
+### Chores
+
+* **ci:** upgrade `actions/github-script` ([257a0c5](https://github.com/andreibesleaga/ocm-sdk/commit/257a0c578db1cbdfe99fe6270dc13e59fa56eaa0))
+* **internal:** update lock file ([512e859](https://github.com/andreibesleaga/ocm-sdk/commit/512e859e4ea4dc6a602cb132f803d0a870c1b736))
+
 ## 0.12.3-beta (2026-01-23)
 
 Full Changelog: [v0.12.2-beta...v0.12.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.2-beta...v0.12.3-beta)
