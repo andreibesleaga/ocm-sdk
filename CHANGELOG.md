@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.12.5-beta (2026-01-26)
+
+Full Changelog: [v0.12.4-beta...v0.12.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.4-beta...v0.12.5-beta)
+
+### Chores
+
+* update SDK settings ([94878c2](https://github.com/andreibesleaga/ocm-sdk/commit/94878c245a9d02aa2ea4349988719d8466c6a0da))
+* update SDK settings ([f896212](https://github.com/andreibesleaga/ocm-sdk/commit/f896212e1980ee503c5b4e69e0db148cbc93cb02))
+
 ## 0.12.4-beta (2026-01-24)
 
 Full Changelog: [v0.12.3-beta...v0.12.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.3-beta...v0.12.4-beta)
