@@ -4,6 +4,7 @@ import { McpTool, Metadata, ToolCallResult, asErrorResult, asTextContentResult }
 import { Tool } from '@modelcontextprotocol/sdk/types.js';
 import { readEnv } from './server';
 import { WorkerInput, WorkerOutput } from './code-tool-types';
+import { Ocm } from 'ocm-sdk';
 
 const prompt = `Runs JavaScript code to interact with the Ocm API.
 
@@ -52,7 +53,7 @@ export function codeTool(): McpTool {
       required: ['code'],
     },
   };
-  const handler = async (_: unknown, args: any): Promise<ToolCallResult> => {
+  const handler = async (client: Ocm, args: any): Promise<ToolCallResult> => {
     const code = args.code as string;
     const intent = args.intent as string | undefined;
 
@@ -68,9 +69,9 @@ export function codeTool(): McpTool {
         ...(stainlessAPIKey && { Authorization: stainlessAPIKey }),
         'Content-Type': 'application/json',
         client_envs: JSON.stringify({
-          OCM_API_KEY: readEnv('OCM_API_KEY'),
-          OCM_USERNAME: readEnv('OCM_USERNAME'),
-          OCM_BASE_URL: readEnv('OCM_BASE_URL'),
+          OCM_API_KEY: readEnv('OCM_API_KEY') ?? client.apiKey ?? undefined,
+          OCM_USERNAME: readEnv('OCM_USERNAME') ?? client.bearer ?? undefined,
+          OCM_BASE_URL: readEnv('OCM_BASE_URL') ?? client.baseURL ?? undefined,
         }),
       },
       body: JSON.stringify({
