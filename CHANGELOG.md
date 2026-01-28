@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.12.6-beta (2026-01-28)
+
+Full Changelog: [v0.12.5-beta...v0.12.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.5-beta...v0.12.6-beta)
+
+### Bug Fixes
+
+* **mcp:** allow falling back for required env variables ([fc5ac10](https://github.com/andreibesleaga/ocm-sdk/commit/fc5ac10dba93dcab35308bc2d6cffc0f2f57d39e))
+
+
+### Chores
+
+* **internal:** codegen related update ([5829132](https://github.com/andreibesleaga/ocm-sdk/commit/5829132ca6f520bf2d468d2ca3e78729403feba5))
+* **internal:** upgrade wrangler version ([4917182](https://github.com/andreibesleaga/ocm-sdk/commit/4917182f82f46a0ebace181dac1f33ca4c947d12))
+
 ## 0.12.5-beta (2026-01-26)
 
 Full Changelog: [v0.12.4-beta...v0.12.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.4-beta...v0.12.5-beta)
