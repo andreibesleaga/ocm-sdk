@@ -21,7 +21,7 @@ export const newMcpServer = () =>
   new McpServer(
     {
       name: 'ocm_sdk_api',
-      version: '0.12.5-beta',
+      version: '0.12.6-beta',
     },
     { capabilities: { tools: {}, logging: {} } },
   );
