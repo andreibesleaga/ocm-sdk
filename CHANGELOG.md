@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.12.7-beta (2026-01-29)
+
+Full Changelog: [v0.12.6-beta...v0.12.7-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.6-beta...v0.12.7-beta)
+
+### Bug Fixes
+
+* **docs:** fix mcp installation instructions for remote servers ([b86aa41](https://github.com/andreibesleaga/ocm-sdk/commit/b86aa41711f56491e1ef3b592cdfee8de6c8b23d))
+
+
+### Chores
+
+* **mcp:** up tsconfig lib version to es2022 ([e602fe7](https://github.com/andreibesleaga/ocm-sdk/commit/e602fe7c95554fca35f45b254f09e46351a3cfeb))
+* update SDK settings ([0b70320](https://github.com/andreibesleaga/ocm-sdk/commit/0b7032069bc555c03bfc30298e69965da0fe653c))
+
 ## 0.12.6-beta (2026-01-28)
 
 Full Changelog: [v0.12.5-beta...v0.12.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.5-beta...v0.12.6-beta)
