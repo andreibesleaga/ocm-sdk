@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.12.9-beta (2026-02-03)
+
+Full Changelog: [v0.12.8-beta...v0.12.9-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.8-beta...v0.12.9-beta)
+
+### Bug Fixes
+
+* **client:** avoid memory leak with abort signals ([4659194](https://github.com/andreibesleaga/ocm-sdk/commit/4659194caee7d5654a2b7b31da877889311568e4))
+
+
+### Chores
+
+* **client:** do not parse responses with empty content-length ([0225cd7](https://github.com/andreibesleaga/ocm-sdk/commit/0225cd72825a95590ff3556a4e135125c9fa8242))
+* **internal:** support oauth authorization code flow for MCP servers ([5fc93e6](https://github.com/andreibesleaga/ocm-sdk/commit/5fc93e642351ff47c32fe6f4079695d80f0ec8d5))
+
 ## 0.12.8-beta (2026-01-29)
 
 Full Changelog: [v0.12.7-beta...v0.12.8-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.7-beta...v0.12.8-beta)
