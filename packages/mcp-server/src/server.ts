@@ -57,7 +57,7 @@ export const newMcpServer = async () =>
   new McpServer(
     {
       name: 'ocm_sdk_api',
-      version: '0.12.9-beta',
+      version: '0.13.0-beta',
     },
     {
       instructions: await getInstructions(),
