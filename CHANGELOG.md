@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.13.0-beta (2026-02-07)
+
+Full Changelog: [v0.12.9-beta...v0.13.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.9-beta...v0.13.0-beta)
+
+### Features
+
+* **mcp:** add initial server instructions ([9e04c90](https://github.com/andreibesleaga/ocm-sdk/commit/9e04c906845721332ccedf26f0596f048c4f0bdd))
+
+
+### Bug Fixes
+
+* **client:** avoid removing abort listener too early ([b763191](https://github.com/andreibesleaga/ocm-sdk/commit/b76319142edd000491e6f4dfafef64df4d6a9203))
+
+
+### Chores
+
+* **client:** restructure abort controller binding ([ea2d793](https://github.com/andreibesleaga/ocm-sdk/commit/ea2d7932892cd5305490e4c38fa06020ee13c5dd))
+* **internal:** add health check to MCP server when running in HTTP mode ([2702ef9](https://github.com/andreibesleaga/ocm-sdk/commit/2702ef9c7ddd2ca6aebcbeed61b8181e2a84a1b6))
+* **internal:** refactor flag parsing for MCP servers and add debug flag ([8ffee8d](https://github.com/andreibesleaga/ocm-sdk/commit/8ffee8dce1c7e8cff8a72fc6b75cf67e2d2b7f7f))
+* **internal:** upgrade hono ([3e702eb](https://github.com/andreibesleaga/ocm-sdk/commit/3e702eb6b1b4ef718d843322d45a6af107b0666a))
+
 ## 0.12.9-beta (2026-02-03)
 
 Full Changelog: [v0.12.8-beta...v0.12.9-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.8-beta...v0.12.9-beta)
