@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.13.1-beta (2026-02-10)
+
+Full Changelog: [v0.13.0-beta...v0.13.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.0-beta...v0.13.1-beta)
+
+### Chores
+
+* **internal:** allow basic filtering of methods allowed for MCP code mode ([9f99543](https://github.com/andreibesleaga/ocm-sdk/commit/9f99543ac122da6589ff8500feaf1b4f25696624))
+* **internal:** always generate MCP server dockerfiles and upgrade associated dependencies ([8b20a3d](https://github.com/andreibesleaga/ocm-sdk/commit/8b20a3db46f89ad8360610206c163eafa7b2168e))
+
 ## 0.13.0-beta (2026-02-07)
 
 Full Changelog: [v0.12.9-beta...v0.13.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.12.9-beta...v0.13.0-beta)

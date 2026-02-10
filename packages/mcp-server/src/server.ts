@@ -12,6 +12,7 @@ import Ocm from 'ocm-sdk';
 import { codeTool } from './code-tool';
 import docsSearchTool from './docs-search-tool';
 import { McpOptions } from './options';
+import { blockedMethodsForCodeTool } from './methods';
 import { HandlerFunction, McpTool } from './types';
 
 export { McpOptions } from './options';
@@ -57,7 +58,7 @@ export const newMcpServer = async () =>
   new McpServer(
     {
       name: 'ocm_sdk_api',
-      version: '0.13.0-beta',
+      version: '0.13.1-beta',
     },
     {
       instructions: await getInstructions(),
@@ -147,7 +148,11 @@ export async function initMcpServer(params: {
  * Selects the tools to include in the MCP Server based on the provided options.
  */
 export function selectTools(options?: McpOptions): McpTool[] {
-  const includedTools = [codeTool()];
+  const includedTools = [
+    codeTool({
+      blockedMethods: blockedMethodsForCodeTool(options),
+    }),
+  ];
   if (options?.includeDocsTools ?? true) {
     includedTools.push(docsSearchTool);
   }
