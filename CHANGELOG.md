@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.13.3-beta (2026-02-12)
+
+Full Changelog: [v0.13.2-beta...v0.13.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.2-beta...v0.13.3-beta)
+
+### Chores
+
+* **internal:** avoid type checking errors with ts-reset ([c5c2ae8](https://github.com/andreibesleaga/ocm-sdk/commit/c5c2ae88491e369f5551ccc7a64c45ac39fcef8d))
+
 ## 0.13.2-beta (2026-02-10)
 
 Full Changelog: [v0.13.1-beta...v0.13.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.1-beta...v0.13.2-beta)
