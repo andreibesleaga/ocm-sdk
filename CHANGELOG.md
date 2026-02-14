@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.13.4-beta (2026-02-14)
+
+Full Changelog: [v0.13.3-beta...v0.13.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.3-beta...v0.13.4-beta)
+
+### Chores
+
+* **internal:** improve layout of generated MCP server files ([035f766](https://github.com/andreibesleaga/ocm-sdk/commit/035f766dda7f05016f5bc7061d2bf9173d3da069))
+* **mcp:** forward STAINLESS_API_KEY to docs search endpoint ([035e1e0](https://github.com/andreibesleaga/ocm-sdk/commit/035e1e0dbee31bbec1397774a5dff473868fd2aa))
+* update SDK settings ([0c1f756](https://github.com/andreibesleaga/ocm-sdk/commit/0c1f75642bc6ab72502544d61807fa6f669c2f59))
+* update SDK settings ([07dfa0c](https://github.com/andreibesleaga/ocm-sdk/commit/07dfa0cba9d987905a9d5c16c5395e342c5074d7))
+
 ## 0.13.3-beta (2026-02-12)
 
 Full Changelog: [v0.13.2-beta...v0.13.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.2-beta...v0.13.3-beta)
