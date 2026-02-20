@@ -8,7 +8,7 @@ const client = new Ocm({
 });
 
 describe('resource comment', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submit: only required params', async () => {
     const responsePromise = client.comment.submit({ chargePointID: 0 });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource comment', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submit: required and optional params', async () => {
     const response = await client.comment.submit({
       chargePointID: 0,
