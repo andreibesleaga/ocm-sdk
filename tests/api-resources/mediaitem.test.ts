@@ -8,7 +8,7 @@ const client = new Ocm({
 });
 
 describe('resource mediaitem', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.mediaitem.create({
       chargePointID: 1234,
@@ -23,7 +23,7 @@ describe('resource mediaitem', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.mediaitem.create({
       chargePointID: 1234,
