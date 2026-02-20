@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.13.5-beta (2026-02-20)
+
+Full Changelog: [v0.13.4-beta...v0.13.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.4-beta...v0.13.5-beta)
+
+### Bug Fixes
+
+* **mcp:** initialize SDK lazily to avoid failing the connection on init errors ([3061c88](https://github.com/andreibesleaga/ocm-sdk/commit/3061c8891f1f2b54af9b20dde52ba83d2e9ed210))
+
+
+### Chores
+
+* **internal/client:** fix form-urlencoded requests ([06b6333](https://github.com/andreibesleaga/ocm-sdk/commit/06b6333c09843d016c2cf40447280c7bb717615a))
+* **internal:** allow setting x-stainless-api-key header on mcp server requests ([64f25b9](https://github.com/andreibesleaga/ocm-sdk/commit/64f25b98fabe0f3ec868937eb29ff7551d4d9712))
+* **internal:** cache fetch instruction calls in MCP server ([e6ae3a2](https://github.com/andreibesleaga/ocm-sdk/commit/e6ae3a2de60702ec5b0f7fdc5f2bfb2c80e99893))
+* **internal:** remove mock server code ([9fd8469](https://github.com/andreibesleaga/ocm-sdk/commit/9fd8469369cb8391beaef8a28669153e32d773aa))
+* **mcp:** correctly update version in sync with sdk ([e287223](https://github.com/andreibesleaga/ocm-sdk/commit/e287223fae374f2d899394c84d02e22121887304))
+* update mock server docs ([e61e7e5](https://github.com/andreibesleaga/ocm-sdk/commit/e61e7e5419cb9ed787e3a1edc77b2102689785eb))
+
 ## 0.13.4-beta (2026-02-14)
 
 Full Changelog: [v0.13.3-beta...v0.13.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.3-beta...v0.13.4-beta)
