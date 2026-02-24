@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.13.6-beta (2026-02-24)
+
+Full Changelog: [v0.13.5-beta...v0.13.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.5-beta...v0.13.6-beta)
+
+### Bug Fixes
+
+* **docs/contributing:** correct pnpm link command ([3d6fa4c](https://github.com/andreibesleaga/ocm-sdk/commit/3d6fa4cf1f1e5649564dec287b367fb89e05c330))
+
+
+### Chores
+
+* **internal:** update agents version ([26a8d0c](https://github.com/andreibesleaga/ocm-sdk/commit/26a8d0c336a8952b4fac2320006dfaaf240a1492))
+* **internal:** upgrade @modelcontextprotocol/sdk and hono ([470a2d0](https://github.com/andreibesleaga/ocm-sdk/commit/470a2d0a5bdeb45c4d6b84b0e664890a9c7865a9))
+
 ## 0.13.5-beta (2026-02-20)
 
 Full Changelog: [v0.13.4-beta...v0.13.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.4-beta...v0.13.5-beta)
