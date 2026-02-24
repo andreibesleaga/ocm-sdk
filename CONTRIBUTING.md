@@ -60,7 +60,7 @@ $ yarn link ocm-sdk
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global ocm-sdk
+$ pnpm link --global ocm-sdk
 ```
 
 ## Running tests
