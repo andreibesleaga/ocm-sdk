@@ -20,7 +20,7 @@ export const newMcpServer = async (stainlessApiKey: string | undefined) =>
   new McpServer(
     {
       name: 'ocm_sdk_api',
-      version: '0.13.5-beta',
+      version: '0.13.6-beta',
     },
     {
       instructions: await getInstructions(stainlessApiKey),
