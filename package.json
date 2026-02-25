@@ -1,6 +1,6 @@
 {
   "name": "ocm-sdk",
-  "version": "0.13.8-beta",
+  "version": "0.13.9-beta",
   "description": "The official TypeScript library for the Ocm API",
   "author": "Ocm <>",
   "types": "dist/index.d.ts",
