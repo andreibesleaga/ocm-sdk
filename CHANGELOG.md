@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.13.8-beta (2026-02-25)
+
+Full Changelog: [v0.13.7-beta...v0.13.8-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.7-beta...v0.13.8-beta)
+
+### Chores
+
+* **internal:** unconfigure MCP Server hosting ([a7e8a01](https://github.com/andreibesleaga/ocm-sdk/commit/a7e8a01eb2936ed197231788224e92bfca2ff106))
+
 ## 0.13.7-beta (2026-02-25)
 
 Full Changelog: [v0.13.6-beta...v0.13.7-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.6-beta...v0.13.7-beta)
