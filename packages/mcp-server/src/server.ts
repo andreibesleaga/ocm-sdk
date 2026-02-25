@@ -20,7 +20,7 @@ export const newMcpServer = async (stainlessApiKey: string | undefined) =>
   new McpServer(
     {
       name: 'ocm_sdk_api',
-      version: '0.13.6-beta',
+      version: '0.13.7-beta',
     },
     {
       instructions: await getInstructions(stainlessApiKey),
@@ -159,6 +159,7 @@ export function selectTools(options?: McpOptions): McpTool[] {
   const includedTools = [
     codeTool({
       blockedMethods: blockedMethodsForCodeTool(options),
+      codeExecutionMode: options?.codeExecutionMode ?? 'stainless-sandbox',
     }),
   ];
   if (options?.includeDocsTools ?? true) {

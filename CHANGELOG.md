@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.13.7-beta (2026-02-25)
+
+Full Changelog: [v0.13.6-beta...v0.13.7-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.6-beta...v0.13.7-beta)
+
+### Chores
+
+* **internal:** codegen related update ([90c57db](https://github.com/andreibesleaga/ocm-sdk/commit/90c57dbf8b34116709aede00c8272a642426b1c9))
+* **internal:** make MCP code execution location configurable via a flag ([e99c542](https://github.com/andreibesleaga/ocm-sdk/commit/e99c542d2f4f11c9bc373702bb5d0bf0791351ff))
+* update SDK settings ([43cde64](https://github.com/andreibesleaga/ocm-sdk/commit/43cde64cd2b9d71d455a7d538a47af88efecbd4b))
+* update SDK settings ([1ef081a](https://github.com/andreibesleaga/ocm-sdk/commit/1ef081a5a80827f6118428bc039dd7260c753bee))
+
 ## 0.13.6-beta (2026-02-24)
 
 Full Changelog: [v0.13.5-beta...v0.13.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.5-beta...v0.13.6-beta)

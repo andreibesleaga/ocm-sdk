@@ -1,6 +1,6 @@
 {
   "name": "ocm-sdk-mcp",
-  "version": "0.13.6-beta",
+  "version": "0.13.7-beta",
   "description": "MCP Server for the Ocm API",
   "author": "Ocm <>",
   "types": "dist/index.d.ts",
