@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.13.11-beta (2026-02-26)
+
+Full Changelog: [v0.13.10-beta...v0.13.11-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.10-beta...v0.13.11-beta)
+
+### Chores
+
+* **internal:** fix MCP Dockerfiles so they can be built without buildkit ([6fb5206](https://github.com/andreibesleaga/ocm-sdk/commit/6fb52064d54845e8f652cee3e15e068848cc7055))
+* **internal:** fix MCP Dockerfiles so they can be built without buildkit ([d032020](https://github.com/andreibesleaga/ocm-sdk/commit/d032020a426045cd9ba9e342b409a827deba08a1))
+
 ## 0.13.10-beta (2026-02-25)
 
 Full Changelog: [v0.13.9-beta...v0.13.10-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.9-beta...v0.13.10-beta)
