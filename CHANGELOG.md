@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.14.0-beta (2026-02-27)
+
+Full Changelog: [v0.13.11-beta...v0.14.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.11-beta...v0.14.0-beta)
+
+### Features
+
+* **mcp:** add an option to disable code tool ([5b57772](https://github.com/andreibesleaga/ocm-sdk/commit/5b57772ccacbeb17049a4c37ad92ef59823ce37b))
+
+
+### Bug Fixes
+
+* **mcp:** update prompt ([da8e111](https://github.com/andreibesleaga/ocm-sdk/commit/da8e1113a6e2459232f1abb5c0551c934b1b1eef))
+
+
+### Chores
+
+* **internal:** move stringifyQuery implementation to internal function ([1dc9fd8](https://github.com/andreibesleaga/ocm-sdk/commit/1dc9fd8891e3ca3f0aefc46b9d4eac31644139a0))
+
 ## 0.13.11-beta (2026-02-26)
 
 Full Changelog: [v0.13.10-beta...v0.13.11-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.10-beta...v0.13.11-beta)
