@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.14.1-beta (2026-03-04)
+
+Full Changelog: [v0.14.0-beta...v0.14.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.0-beta...v0.14.1-beta)
+
+### Chores
+
+* **internal:** codegen related update ([aac06f5](https://github.com/andreibesleaga/ocm-sdk/commit/aac06f52bc4663259e91b09977c14644f0208de1))
+* **internal:** use x-stainless-mcp-client-envs header for MCP remote code tool calls ([00d7888](https://github.com/andreibesleaga/ocm-sdk/commit/00d78888676fd4b36321bcbd6ee1b33d04136bd9))
+* **mcp-server:** return access instructions for 404 without API key ([2553d84](https://github.com/andreibesleaga/ocm-sdk/commit/2553d8486a306c703123074263c8bd9c56ece183))
+
 ## 0.14.0-beta (2026-02-27)
 
 Full Changelog: [v0.13.11-beta...v0.14.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.13.11-beta...v0.14.0-beta)
