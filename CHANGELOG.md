@@ -1,5 +1,27 @@
 # Changelog
 
+## 0.14.2-beta (2026-03-17)
+
+Full Changelog: [v0.14.1-beta...v0.14.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.1-beta...v0.14.2-beta)
+
+### Bug Fixes
+
+* **client:** preserve URL params already embedded in path ([d14c454](https://github.com/andreibesleaga/ocm-sdk/commit/d14c4548203ae17dcc18e8c4e1b830bdb4e01194))
+
+
+### Chores
+
+* **ci:** skip uploading artifacts on stainless-internal branches ([fe83625](https://github.com/andreibesleaga/ocm-sdk/commit/fe83625221b011a73c60cbb7a3f6c77bb97b5f6c))
+* **internal:** bump @modelcontextprotocol/sdk, @hono/node-server, and minimatch ([0126649](https://github.com/andreibesleaga/ocm-sdk/commit/0126649e72a36c9b58c5f62f4a6dca62e3646b26))
+* **internal:** codegen related update ([de094a9](https://github.com/andreibesleaga/ocm-sdk/commit/de094a9151477c858c1f15ca1fc4064b9edb521e))
+* **internal:** make generated MCP servers compatible with Cloudflare worker environments ([61b36b2](https://github.com/andreibesleaga/ocm-sdk/commit/61b36b22b99182b6b2f94f9cadf6ea17648819e0))
+* **internal:** support x-stainless-mcp-client-envs header in MCP servers ([6f5a440](https://github.com/andreibesleaga/ocm-sdk/commit/6f5a440ab3fb0fe9cbf52fa75fe952152340879e))
+* **internal:** support x-stainless-mcp-client-permissions headers in MCP servers ([8e6c493](https://github.com/andreibesleaga/ocm-sdk/commit/8e6c493592cbd8dd1bd464f3fc16ee6edf284403))
+* **internal:** tweak CI branches ([91417ef](https://github.com/andreibesleaga/ocm-sdk/commit/91417ef2bb48b9f8a99c72230c2434d658009769))
+* **internal:** update dependencies to address dependabot vulnerabilities ([8c6e024](https://github.com/andreibesleaga/ocm-sdk/commit/8c6e0245c3e977a39b1e0bfd34e9ede04c1017fe))
+* **mcp-server:** improve instructions ([fbecb07](https://github.com/andreibesleaga/ocm-sdk/commit/fbecb07800e877a7500f644d0bd9a55570801732))
+* use proper capitalization for WebSockets ([44bd549](https://github.com/andreibesleaga/ocm-sdk/commit/44bd549a6ef3e324237c444573b7072b8e6466fc))
+
 ## 0.14.1-beta (2026-03-04)
 
 Full Changelog: [v0.14.0-beta...v0.14.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.0-beta...v0.14.1-beta)
