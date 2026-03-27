@@ -1,5 +1,23 @@
 # Changelog
 
+## 0.14.3-beta (2026-03-27)
+
+Full Changelog: [v0.14.2-beta...v0.14.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.2-beta...v0.14.3-beta)
+
+### Bug Fixes
+
+* **mcp:** bump agents version in cloudflare worker MCP servers ([31260d8](https://github.com/andreibesleaga/ocm-sdk/commit/31260d80f800645aecf683a6cf19b62cf487dcbc))
+
+
+### Chores
+
+* **ci:** skip lint on metadata-only changes ([acee59d](https://github.com/andreibesleaga/ocm-sdk/commit/acee59d1bfb3701d5e8f5099142e740f3de076a7))
+* **internal:** fix MCP server TS errors that occur with required client options ([9fae4cf](https://github.com/andreibesleaga/ocm-sdk/commit/9fae4cf07631f8045f4adb9f255404e81b30405d))
+* **internal:** support custom-instructions-path flag in MCP servers ([c40224c](https://github.com/andreibesleaga/ocm-sdk/commit/c40224cf6629a8a549931a30069e70b5a8bb20b8))
+* **internal:** update gitignore ([0612063](https://github.com/andreibesleaga/ocm-sdk/commit/06120633af4919784ff0ce301399254a67361a66))
+* update SDK settings ([97f4b0d](https://github.com/andreibesleaga/ocm-sdk/commit/97f4b0d517fa4c9e2ad3eae197b4c454eb47f051))
+* update SDK settings ([df346f4](https://github.com/andreibesleaga/ocm-sdk/commit/df346f476f6702929fa5a9b8d13e6e46b011eeb7))
+
 ## 0.14.2-beta (2026-03-17)
 
 Full Changelog: [v0.14.1-beta...v0.14.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.1-beta...v0.14.2-beta)
