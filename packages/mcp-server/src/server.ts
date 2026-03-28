@@ -28,7 +28,7 @@ export const newMcpServer = async ({
   new McpServer(
     {
       name: 'ocm_sdk_api',
-      version: '0.14.4-beta',
+      version: '0.14.5-beta',
     },
     {
       instructions: await getInstructions({ stainlessApiKey, customInstructionsPath }),

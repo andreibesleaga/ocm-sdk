@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.14.5-beta (2026-03-28)
+
+Full Changelog: [v0.14.4-beta...v0.14.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.4-beta...v0.14.5-beta)
+
+### Chores
+
+* **ci:** escape input path in publish-npm workflow ([7aa468e](https://github.com/andreibesleaga/ocm-sdk/commit/7aa468e1e09a0186f2a15fed495f3789035ad6fd))
+* **internal:** codegen related update ([9ebc086](https://github.com/andreibesleaga/ocm-sdk/commit/9ebc086d08e30b24e788993db759fd376bba0f1e))
+* **internal:** support local docs search in MCP servers ([b9a070f](https://github.com/andreibesleaga/ocm-sdk/commit/b9a070fa3520534eee87b0fa539d436752cc0b7c))
+
 ## 0.14.4-beta (2026-03-27)
 
 Full Changelog: [v0.14.3-beta...v0.14.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.3-beta...v0.14.4-beta)
