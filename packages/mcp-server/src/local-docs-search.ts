@@ -105,6 +105,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       http: {
         example: 'curl https://api.openchargemap.io/v3/poi',
       },
+      php: {
+        method: 'poi->list',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pois = $client->poi->list(\n  boundingbox: [(object) []],\n  camelcase: true,\n  chargepointid: 'chargepointid',\n  client: 'client',\n  compact: true,\n  connectiontypeid: [(object) []],\n  countrycode: 'countrycode',\n  countryid: ['string'],\n  dataproviderid: [(object) []],\n  distance: 0,\n  distanceunit: 'distanceunit',\n  greaterthanid: 'greaterthanid',\n  includecomments: true,\n  latitude: 0,\n  levelid: [(object) []],\n  longitude: 0,\n  maxresults: 0,\n  modifiedsince: 'modifiedsince',\n  opendata: true,\n  operatorid: [(object) []],\n  output: 'output',\n  polygon: 'polygon',\n  polyline: 'polyline',\n  sortby: 'sortby',\n  statustypeid: [(object) []],\n  usagetypeid: [(object) []],\n  verbose: true,\n);\n\nvar_dump($pois);",
+      },
       typescript: {
         method: 'client.poi.list',
         example:
@@ -139,6 +144,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       http: {
         example: 'curl https://api.openchargemap.io/v3/referencedata',
       },
+      php: {
+        method: 'referencedata->retrieve',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$referencedata = $client->referencedata->retrieve(countryid: [(object) []]);\n\nvar_dump($referencedata);",
+      },
       typescript: {
         method: 'client.referencedata.retrieve',
         example:
@@ -172,6 +182,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       },
       http: {
         example: 'curl https://api.openchargemap.io/v3/profile/authenticate \\\n    -X POST',
+      },
+      php: {
+        method: 'profile->authenticate',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$response = $client->profile->authenticate(\n  emailaddress: 'string', password: 'string'\n);\n\nvar_dump($response);",
       },
       typescript: {
         method: 'client.profile.authenticate',
@@ -214,6 +229,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           'curl https://api.openchargemap.io/v3/comment \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 0,\n          "rating": 3\n        }\'',
       },
+      php: {
+        method: 'comment->submit',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(bearer: 'My Bearer');\n\n$response = $client->comment->submit(\n  chargePointID: 0,\n  checkinStatusTypeID: 0,\n  comment: 'string',\n  commentTypeID: 0,\n  rating: 3,\n  relatedURL: 'string',\n  userName: 'string',\n);\n\nvar_dump($response);",
+      },
       typescript: {
         method: 'client.comment.submit',
         example:
@@ -248,6 +268,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
         example:
           'curl https://api.openchargemap.io/v3/mediaitem \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 1234,\n          "imageDataBase64": "data:image/jpeg;base64,<BASE64_ENCODED_DATA>"\n        }\'',
       },
+      php: {
+        method: 'mediaitem->create',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(bearer: 'My Bearer');\n\n$mediaitem = $client->mediaitem->create(\n  chargePointID: 1234,\n  imageDataBase64: 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>',\n  comment: 'An example comment',\n);\n\nvar_dump($mediaitem);",
+      },
       typescript: {
         method: 'client.mediaitem.create',
         example:
@@ -280,6 +305,11 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       http: {
         example: 'curl https://api.openchargemap.io/v3/openapi',
       },
+      php: {
+        method: 'openAPI->retrieve',
+        example:
+          "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$openAPI = $client->openAPI->retrieve();\n\nvar_dump($openAPI);",
+      },
       typescript: {
         method: 'client.openAPI.retrieve',
         example:
@@ -304,6 +334,11 @@ const EMBEDDED_READMES: { language: string; content: string }[] = [
     language: 'cli',
     content:
       "# Ocm CLI\n\nThe official CLI for the [Ocm REST API](https://openchargemap.org/site/about).\n\nIt is generated with [Stainless](https://www.stainless.com/).\n\n## Installation\n\n### Installing with Go\n\nTo test or install the CLI locally, you need [Go](https://go.dev/doc/install) version 1.22 or later installed.\n\n~~~sh\ngo install 'github.com/stainless-sdks/ocm-cli/cmd/ocm@latest'\n~~~\n\nOnce you have run `go install`, the binary is placed in your Go bin directory:\n\n- **Default location**: `$HOME/go/bin` (or `$GOPATH/bin` if GOPATH is set)\n- **Check your path**: Run `go env GOPATH` to see the base directory\n\nIf commands aren't found after installation, add the Go bin directory to your PATH:\n\n~~~sh\n# Add to your shell profile (.zshrc, .bashrc, etc.)\nexport PATH=\"$PATH:$(go env GOPATH)/bin\"\n~~~\n\n### Running Locally\n\nAfter cloning the git repository for this project, you can use the\n`scripts/run` script to run the tool locally:\n\n~~~sh\n./scripts/run args...\n~~~\n\n## Usage\n\nThe CLI follows a resource-based command structure:\n\n~~~sh\nocm [resource] <command> [flags...]\n~~~\n\n~~~sh\nocm poi list \\\n  --api-key 'My API Key'\n~~~\n\nFor details about specific commands, use the `--help` flag.\n\n### Environment variables\n\n| Environment variable | Required | Default value |\n| -------------------- | -------- | ------------- |\n| `OCM_API_KEY`        | no       | `null`        |\n| `OCM_API_KEY`        | no       | `null`        |\n| `OCM_USERNAME`       | no       | `null`        |\n\n### Global flags\n\n- `--api-key` (can also be set with `OCM_API_KEY` env var)\n- `--api-key-header` (can also be set with `OCM_API_KEY` env var)\n- `--bearer` (can also be set with `OCM_USERNAME` env var)\n- `--help` - Show command line usage\n- `--debug` - Enable debug logging (includes HTTP request/response details)\n- `--version`, `-v` - Show the CLI version\n- `--base-url` - Use a custom API backend URL\n- `--format` - Change the output format (`auto`, `explore`, `json`, `jsonl`, `pretty`, `raw`, `yaml`)\n- `--format-error` - Change the output format for errors (`auto`, `explore`, `json`, `jsonl`, `pretty`, `raw`, `yaml`)\n- `--transform` - Transform the data output using [GJSON syntax](https://github.com/tidwall/gjson/blob/master/SYNTAX.md)\n- `--transform-error` - Transform the error output using [GJSON syntax](https://github.com/tidwall/gjson/blob/master/SYNTAX.md)\n\n### Passing files as arguments\n\nTo pass files to your API, you can use the `@myfile.ext` syntax:\n\n~~~bash\nocm <command> --arg @abe.jpg\n~~~\n\nFiles can also be passed inside JSON or YAML blobs:\n\n~~~bash\nocm <command> --arg '{image: \"@abe.jpg\"}'\n# Equivalent:\nocm <command> <<YAML\narg:\n  image: \"@abe.jpg\"\nYAML\n~~~\n\nIf you need to pass a string literal that begins with an `@` sign, you can\nescape the `@` sign to avoid accidentally passing a file.\n\n~~~bash\nocm <command> --username '\\@abe'\n~~~\n\n#### Explicit encoding\n\nFor JSON endpoints, the CLI tool does filetype sniffing to determine whether the\nfile contents should be sent as a string literal (for plain text files) or as a\nbase64-encoded string literal (for binary files). If you need to explicitly send\nthe file as either plain text or base64-encoded data, you can use\n`@file://myfile.txt` (for string encoding) or `@data://myfile.dat` (for\nbase64-encoding). Note that absolute paths will begin with `@file://` or\n`@data://`, followed by a third `/` (for example, `@file:///tmp/file.txt`).\n\n~~~bash\nocm <command> --arg @data://file.txt\n~~~\n",
+  },
+  {
+    language: 'php',
+    content:
+      '# Ocm PHP API Library\n\nThe Ocm PHP library provides convenient access to the Ocm REST API from any PHP 8.1.0+ application.\n\n## Installation\n\nTo use this package, install via Composer by adding the following to your application\'s `composer.json`:\n\n<!-- x-release-please-start-version -->\n```json\n{\n  "repositories": [\n    {\n      "type": "vcs",\n      "url": "git@github.com:andreibesleaga/ocm-php.git"\n    }\n  ],\n  "require": {\n    "andreibesleaga/ocm-php": "dev-main"\n  }\n}\n```\n<!-- x-release-please-end -->\n\n## Usage\n\n```php\n<?php\n\n$client = new Client(apiKey: getenv(\'OCM_API_KEY\') ?: \'My API Key\');\n\n$pois = $client->poi->list();\n\nvar_dump($pois);\n```',
   },
 ];
 
