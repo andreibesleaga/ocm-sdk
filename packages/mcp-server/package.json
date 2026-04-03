@@ -1,6 +1,6 @@
 {
   "name": "ocm-sdk-mcp",
-  "version": "0.14.5-beta",
+  "version": "0.14.6-beta",
   "description": "MCP Server for the Ocm API",
   "author": "Ocm <>",
   "types": "dist/index.d.ts",
@@ -30,7 +30,7 @@
     "fix": "eslint --fix ."
   },
   "dependencies": {
-    "ocm-sdk": "file:../../dist/",
+    "ocm-sdk": "link:../../dist/",
     "ajv": "^8.18.0",
     "@cloudflare/cabidela": "^0.2.4",
     "@hono/node-server": "^1.19.10",

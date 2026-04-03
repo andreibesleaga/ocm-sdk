@@ -1,5 +1,25 @@
 # Changelog
 
+## 0.14.6-beta (2026-04-03)
+
+Full Changelog: [v0.14.5-beta...v0.14.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.5-beta...v0.14.6-beta)
+
+### Bug Fixes
+
+* **internal:** gitignore generated `oidc` dir ([5d9e042](https://github.com/andreibesleaga/ocm-sdk/commit/5d9e04258ae570d8549105e77a56254bcbf1331e))
+
+
+### Chores
+
+* **internal:** codegen related update ([398bbfe](https://github.com/andreibesleaga/ocm-sdk/commit/398bbfebd912ac9fa2787d679d0061be3f447e70))
+* **internal:** fix MCP docker image builds in yarn projects ([7cf354e](https://github.com/andreibesleaga/ocm-sdk/commit/7cf354e49a216e863256c035165063321cbb4a7a))
+* **internal:** improve local docs search for MCP servers ([0778b73](https://github.com/andreibesleaga/ocm-sdk/commit/0778b736f20d017afc30510ef28d943db14c4d9e))
+* **internal:** improve local docs search for MCP servers ([06c1d51](https://github.com/andreibesleaga/ocm-sdk/commit/06c1d512aeb18385f922d85da1da8a40e60e0171))
+* **internal:** support type annotations when running MCP in local execution mode ([2b300ce](https://github.com/andreibesleaga/ocm-sdk/commit/2b300ceda9c4b079985d40c6fd9957ea543ebfbf))
+* **internal:** use link instead of file in MCP server package.json files ([bbc8c77](https://github.com/andreibesleaga/ocm-sdk/commit/bbc8c77cfa0ba459ef88d6d7c44194899243c188))
+* **mcp-server:** add support for session id, forward client info ([9a01d51](https://github.com/andreibesleaga/ocm-sdk/commit/9a01d51ddd994c24229a967704a29d560f73d391))
+* **mcp-server:** log client info ([a455488](https://github.com/andreibesleaga/ocm-sdk/commit/a455488340ee49655c697344a57e0d41585e7cf5))
+
 ## 0.14.5-beta (2026-03-28)
 
 Full Changelog: [v0.14.4-beta...v0.14.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.4-beta...v0.14.5-beta)
