@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.14.7-beta (2026-04-07)
+
+Full Changelog: [v0.14.6-beta...v0.14.7-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.6-beta...v0.14.7-beta)
+
+### Chores
+
+* **internal:** fix MCP server import ordering ([8391f27](https://github.com/andreibesleaga/ocm-sdk/commit/8391f27013e2feacda5557378e5209f0e1bf3257))
+
 ## 0.14.6-beta (2026-04-03)
 
 Full Changelog: [v0.14.5-beta...v0.14.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.5-beta...v0.14.6-beta)
