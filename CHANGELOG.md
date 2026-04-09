@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.14.8-beta (2026-04-09)
+
+Full Changelog: [v0.14.7-beta...v0.14.8-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.7-beta...v0.14.8-beta)
+
+### Chores
+
+* **internal:** codegen related update ([636ff70](https://github.com/andreibesleaga/ocm-sdk/commit/636ff70915bf9a5ab0359f737fb1a187afd2012c))
+* **mcp-server:** increase local docs search result count from 5 to 10 ([a97a20d](https://github.com/andreibesleaga/ocm-sdk/commit/a97a20d3117008d821b112e7ef4679149b7a27f5))
+
 ## 0.14.7-beta (2026-04-07)
 
 Full Changelog: [v0.14.6-beta...v0.14.7-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.6-beta...v0.14.7-beta)
