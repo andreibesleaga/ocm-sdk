@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.14.9-beta (2026-04-14)
+
+Full Changelog: [v0.14.8-beta...v0.14.9-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.8-beta...v0.14.9-beta)
+
+### Chores
+
+* **internal:** codegen related update ([4b75d5d](https://github.com/andreibesleaga/ocm-sdk/commit/4b75d5d3aad430d8ad6d069b2b967c6f79522db2))
+* **internal:** show error causes in MCP servers when running in local mode ([ea1f824](https://github.com/andreibesleaga/ocm-sdk/commit/ea1f824edc3e16de11fb53fe4ce2cd02857a4191))
+* update CLI documentation ([d54bed0](https://github.com/andreibesleaga/ocm-sdk/commit/d54bed067ea598db408706f804b04fe48a75e012))
+
 ## 0.14.8-beta (2026-04-09)
 
 Full Changelog: [v0.14.7-beta...v0.14.8-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.7-beta...v0.14.8-beta)
