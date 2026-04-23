@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.14.10-beta (2026-04-23)
+
+Full Changelog: [v0.14.9-beta...v0.14.10-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.9-beta...v0.14.10-beta)
+
+### Chores
+
+* **internal:** more robust bootstrap script ([5eb9278](https://github.com/andreibesleaga/ocm-sdk/commit/5eb92783998e7d122db791df1726d3187df0c845))
+* **internal:** update docs ordering ([1578ef6](https://github.com/andreibesleaga/ocm-sdk/commit/1578ef65628da90b314eebffcaf610a7ddb7b106))
+
 ## 0.14.9-beta (2026-04-14)
 
 Full Changelog: [v0.14.8-beta...v0.14.9-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.8-beta...v0.14.9-beta)
