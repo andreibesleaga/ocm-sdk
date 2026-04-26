@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.14.11-beta (2026-04-26)
+
+Full Changelog: [v0.14.10-beta...v0.14.11-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.10-beta...v0.14.11-beta)
+
+### Chores
+
+* **formatter:** run prettier and eslint separately ([83f8e39](https://github.com/andreibesleaga/ocm-sdk/commit/83f8e39ab0d1a474869936b08fccf76b74e02f1c))
+* restructure docs search code ([049c58b](https://github.com/andreibesleaga/ocm-sdk/commit/049c58b482d21596e5bef2476067a349a57f4e3b))
+
 ## 0.14.10-beta (2026-04-23)
 
 Full Changelog: [v0.14.9-beta...v0.14.10-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.9-beta...v0.14.10-beta)

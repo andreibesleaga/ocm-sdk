@@ -16,36 +16,32 @@ const serverConfig: ServerConfig = {
   orgName: 'Ocm',
   instructionsUrl: undefined, // Set a url for where you show users how to get an API key
   logoUrl: undefined, // Set a custom logo url to appear during the OAuth flow
-  clientProperties: [
-    {
-      key: 'apiKey',
-      label: 'API Key',
-      description: '',
-      required: false,
-      default: null,
-      placeholder: 'My API Key',
-      type: 'password',
-    },
-    {
-      key: 'apiKeyHeader',
-      label: 'API Key Header',
-      description: '',
-      required: false,
-      default: null,
-      placeholder: 'My API Key Header',
-      type: 'password',
-    },
-    {
-      key: 'bearer',
-      label: 'Bearer',
-      description: '',
-      required: false,
-      default: null,
-      placeholder: 'My Bearer',
-      type: 'password',
-    },
-  ],
-};
+  clientProperties: [{
+  key: 'apiKey',
+  label: 'API Key',
+  description: '',
+  required: false,
+  default: null,
+  placeholder: 'My API Key',
+  type: 'password',
+}, {
+  key: 'apiKeyHeader',
+  label: 'API Key Header',
+  description: '',
+  required: false,
+  default: null,
+  placeholder: 'My API Key Header',
+  type: 'password',
+}, {
+  key: 'bearer',
+  label: 'Bearer',
+  description: '',
+  required: false,
+  default: null,
+  placeholder: 'My Bearer',
+  type: 'password',
+}],
+};;
 
 export class MyMCP extends McpAgent<Env, unknown, MCPProps> {
   server = server;
