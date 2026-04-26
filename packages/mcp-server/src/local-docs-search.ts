@@ -93,27 +93,27 @@ const EMBEDDED_METHODS: MethodEntry[] = [
     markdown:
       '## list\n\n`client.poi.list(boundingbox?: object[], camelcase?: boolean, chargepointid?: string, client?: string, compact?: boolean, connectiontypeid?: object[], countrycode?: string, countryid?: string[], dataproviderid?: object[], distance?: number, distanceunit?: string, greaterthanid?: string, includecomments?: boolean, latitude?: number, levelid?: object[], longitude?: number, maxresults?: number, modifiedsince?: string, opendata?: boolean, operatorid?: object[], output?: string, polygon?: string, polyline?: string, sortby?: string, statustypeid?: object[], usagetypeid?: object[], verbose?: boolean): { AddressInfo?: object; Connections?: object[]; DataProvider?: object; DataProviderID?: number; DataProvidersReference?: string; DataQualityLevel?: number; DateCreated?: string; DateLastConfirmed?: string; DateLastStatusUpdate?: string; DateLastVerified?: string; DatePlanned?: string; GeneralComments?: string; ID?: number; IsRecentlyVerified?: boolean; MediaItems?: object[]; MetadataValues?: object[]; NumberOfPoints?: number; OperatorID?: number; OperatorInfo?: object; OperatorsReference?: string; ParentChargePointID?: number; StatusType?: object; StatusTypeID?: number; SubmissionStatus?: object; SubmissionStatusTypeID?: number; UsageCost?: string; UsageType?: object; UsageTypeID?: number; UserComments?: object[]; UUID?: string; }[]`\n\n**get** `/poi`\n\nUsed to fetch a list of POIs (sites) within a geographic boundary or near a specific latitude/longitude. This is the primary method for most applications and services to consume data from Open Charge Map.\n\n### Parameters\n\n- `boundingbox?: object[]`\n  Filter results to a given bounding box. specify top left and bottom right box corners as: (lat,lng),(lat2,lng2)\n\n- `camelcase?: boolean`\n  Set to true to get a property names in camelCase format.\n\n- `chargepointid?: string`\n  Exact match on a given OCM POI ID (comma separated list)\n\n- `client?: string`\n  String to identify your client application. Optional but recommended to distinguish your client from other bots/crawlers\n\n- `compact?: boolean`\n  Set to true to remove reference data objects from output (just returns IDs for common reference data such as DataProvider etc).\n\n- `connectiontypeid?: object[]`\n  Exact match on a given connection type id (comma separated list)\n\n- `countrycode?: string`\n  2-character ISO Country code to filter to one specific country\n\n- `countryid?: string[]`\n  Exact match on a given numeric country id (comma separated list)\n\n- `dataproviderid?: object[]`\n  Exact match on a given data provider id id (comma separated list). \n\n- `distance?: number`\n  Optionally filter results by a max distance from the given latitude/longitude\n\n- `distanceunit?: string`\n  `miles` or `km` distance unit\n\n- `greaterthanid?: string`\n  Filter to items with ID greater than given value\n\n- `includecomments?: boolean`\n  If true, user comments and media items will be include in result set\n\n- `latitude?: number`\n  Latitude for distance calculation and filtering\n\n- `levelid?: object[]`\n  Exact match on a given charging level (1-3) id (comma separated list)\n\n- `longitude?: number`\n  Longitude for distance calculation and filtering\n\n- `maxresults?: number`\n  Limit on max number of results returned\n\n- `modifiedsince?: string`\n  Filter to results modified after the given date\n\n- `opendata?: boolean`\n  Use opendata=true for only OCM provided ("Open") data.\n\n- `operatorid?: object[]`\n  Exact match on a given EVSE operator id (comma separated list)\n\n- `output?: string`\n  Optional output format `json`,`geojson`,`xml`,`csv`, JSON is the default and recommended as the highest fidelity.\n\n- `polygon?: string`\n  Filter results within a given Polygon. Specify an encoded polyline for the polygon shape. Polygon will be automatically closed from the last point to the first point.\n\n- `polyline?: string`\n  Filter results along an encoded polyline, use with distance param to increase search distance along line. Polyline is expanded into a polygon to cover the search distance.\n\n- `sortby?: string`\n  Default sort order is based on spatial index but you can optionally sort by  `modified_asc` for results in order of modification (oldest to newest), or ` id_asc` for results in order of ID\n\n- `statustypeid?: object[]`\n  Exact match on a given status type id (comma separated list)\n\n- `usagetypeid?: object[]`\n  Exact match on a given usage type id (comma separated list)\n\n- `verbose?: boolean`\n  Set to false to get a smaller result set with null items removed.\n\n### Returns\n\n- `{ AddressInfo?: { CountryID: number; ID: number; Latitude: number; Longitude: number; AccessComments?: string; AddressLine1?: string; AddressLine2?: string; ContactEmail?: string; ContactTelephone1?: string; ContactTelephone2?: string; Country?: object; Distance?: number; DistanceUnit?: number; Postcode?: string; RelatedURL?: string; StateOrProvince?: string; Title?: string; Town?: string; }; Connections?: { Amps?: number; Comments?: string; ConnectionType?: { FormalName?: string; ID?: number; IsDiscontinued?: boolean; IsObsolete?: boolean; Title?: string; }; ConnectionTypeID?: number; CurrentType?: { ID: number; Title?: string; }; CurrentTypeID?: number; ID?: number; Level?: { Comments: string; ID: number; IsFastChargeCapable: boolean; Title?: string; }; LevelID?: number; PowerKW?: number; Quantity?: number; Reference?: string; StatusType?: { ID: number; IsOperational: boolean; IsUserSelectable: boolean; Title?: string; }; StatusTypeID?: number; Voltage?: number; }[]; DataProvider?: { ID: number; IsRestrictedEdit: boolean; Comments?: string; DataProviderStatusType?: { ID: number; IsProviderEnabled: boolean; description?: string; }; DateLastImported?: string; IsApprovedImport?: boolean; IsOpenDataLicensed?: boolean; License?: string; Title?: string; WebsiteURL?: string; }; DataProviderID?: number; DataProvidersReference?: string; DataQualityLevel?: number; DateCreated?: string; DateLastConfirmed?: string; DateLastStatusUpdate?: string; DateLastVerified?: string; DatePlanned?: string; GeneralComments?: string; ID?: number; IsRecentlyVerified?: boolean; MediaItems?: { ChargePointID?: string; Comment?: string; DateCreated?: string; ID?: string; IsEnabled?: boolean; IsExternalResource?: boolean; IsFeaturedItem?: boolean; IsVideo?: boolean; ItemThumbnailURL?: string; ItemURL?: string; User?: { ID?: number; ProfileImageURL?: string; ReputationPoints?: number; Username?: string; }; }[]; MetadataValues?: object[]; NumberOfPoints?: number; OperatorID?: number; OperatorInfo?: { ID: number; AddressInfo?: { CountryID: number; ID: number; Latitude: number; Longitude: number; AccessComments?: string; AddressLine1?: string; AddressLine2?: string; ContactEmail?: string; ContactTelephone1?: string; ContactTelephone2?: string; Country?: country; Distance?: number; DistanceUnit?: number; Postcode?: string; RelatedURL?: string; StateOrProvince?: string; Title?: string; Town?: string; }; BookingURL?: string; Comments?: string; ContactEmail?: string; FaultReportEmail?: string; IsPrivateIndividual?: boolean; IsRestrictedEdit?: boolean; PhonePrimaryContact?: string; PhoneSecondaryContact?: string; Title?: string; WebsiteURL?: string; }; OperatorsReference?: string; ParentChargePointID?: number; StatusType?: { ID: number; IsOperational: boolean; IsUserSelectable: boolean; Title?: string; }; StatusTypeID?: number; SubmissionStatus?: { ID: number; IsLive: boolean; Title?: string; }; SubmissionStatusTypeID?: number; UsageCost?: string; UsageType?: { ID: number; IsAccessKeyRequired: boolean; IsMembershipRequired: boolean; IsPayAtLocation: boolean; Title?: string; }; UsageTypeID?: number; UserComments?: { ChargePointID?: number; CheckinStatusType?: { ID: number; IsAutomatedCheckin: boolean; IsPositive?: boolean; Title?: string; }; CheckinStatusTypeID?: number; Comment?: string; CommentType?: { ID?: number; Title?: string; }; CommentTypeID?: number; DateCreated?: string; ID?: string; RelatedURL?: string; User?: { ID?: number; ProfileImageURL?: string; ReputationPoints?: number; Username?: string; }; UserName?: string; }[]; UUID?: string; }[]`\n\n### Example\n\n```typescript\nimport Ocm from \'ocm-sdk\';\n\nconst client = new Ocm();\n\nconst pois = await client.poi.list();\n\nconsole.log(pois);\n```',
     perLanguage: {
-      cli: {
-        method: 'poi list',
-        example: "ocm poi list \\\n  --api-key 'My API Key'",
+      typescript: {
+        method: 'client.poi.list',
+        example:
+          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst pois = await client.poi.list();\n\nconsole.log(pois);",
       },
       go: {
         method: 'client.Poi.List',
         example:
           'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/ocm-go"\n\t"github.com/stainless-sdks/ocm-go/option"\n)\n\nfunc main() {\n\tclient := ocm.NewClient(\n\t\toption.WithAPIKey("My API Key"),\n\t)\n\tpois, err := client.Poi.List(context.TODO(), ocm.PoiListParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", pois)\n}\n',
       },
-      http: {
-        example: 'curl https://api.openchargemap.io/v3/poi',
+      cli: {
+        method: 'poi list',
+        example: "ocm poi list \\\n  --api-key 'My API Key'",
       },
       php: {
         method: 'poi->list',
         example:
           "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$pois = $client->poi->list(\n  boundingbox: [(object) []],\n  camelcase: true,\n  chargepointid: 'chargepointid',\n  client: 'client',\n  compact: true,\n  connectiontypeid: [(object) []],\n  countrycode: 'countrycode',\n  countryid: ['string'],\n  dataproviderid: [(object) []],\n  distance: 0,\n  distanceunit: 'distanceunit',\n  greaterthanid: 'greaterthanid',\n  includecomments: true,\n  latitude: 0,\n  levelid: [(object) []],\n  longitude: 0,\n  maxresults: 0,\n  modifiedsince: 'modifiedsince',\n  opendata: true,\n  operatorid: [(object) []],\n  output: 'output',\n  polygon: 'polygon',\n  polyline: 'polyline',\n  sortby: 'sortby',\n  statustypeid: [(object) []],\n  usagetypeid: [(object) []],\n  verbose: true,\n);\n\nvar_dump($pois);",
       },
-      typescript: {
-        method: 'client.poi.list',
-        example:
-          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst pois = await client.poi.list();\n\nconsole.log(pois);",
+      http: {
+        example: 'curl https://api.openchargemap.io/v3/poi',
       },
     },
   },
@@ -132,27 +132,27 @@ const EMBEDDED_METHODS: MethodEntry[] = [
     markdown:
       "## retrieve\n\n`client.referencedata.retrieve(countryid?: object[]): { ChargerTypes?: object[]; CheckinStatusTypes?: object[]; ConnectionTypes?: object[]; Countries?: country[]; CurrentTypes?: object[]; DataProviders?: object[]; DataTypes?: object; MetadataGroups?: string; Operators?: object[]; StatusTypes?: object[]; SubmissionStatusTypes?: object[]; UsageTypes?: object[]; UserCommentTypes?: object[]; }`\n\n**get** `/referencedata`\n\nReturns the core reference data used for looking up IDs such as Connection Types, Operators, Countries etc. \n\nThis information is useful for UIs such as editing systems or for fetching results in the lighter non-verbose mode, then hydrating POI results back into complex objects.\n\n### Parameters\n\n- `countryid?: object[]`\n  Optional filter on countryid, exact match on a given numeric country id (comma separated list)\n\n### Returns\n\n- `{ ChargerTypes?: { Comments: string; ID: number; IsFastChargeCapable: boolean; Title?: string; }[]; CheckinStatusTypes?: { ID: number; IsAutomatedCheckin: boolean; IsPositive?: boolean; Title?: string; }[]; ConnectionTypes?: { FormalName?: string; ID?: number; IsDiscontinued?: boolean; IsObsolete?: boolean; Title?: string; }[]; Countries?: { ContinentCode: string; ID: number; ISOCode: string; Title?: string; }[]; CurrentTypes?: { ID: number; Title?: string; }[]; DataProviders?: { ID: number; IsRestrictedEdit: boolean; Comments?: string; DataProviderStatusType?: { ID: number; IsProviderEnabled: boolean; description?: string; }; DateLastImported?: string; IsApprovedImport?: boolean; IsOpenDataLicensed?: boolean; License?: string; Title?: string; WebsiteURL?: string; }[]; DataTypes?: object; MetadataGroups?: string; Operators?: { ID: number; AddressInfo?: { CountryID: number; ID: number; Latitude: number; Longitude: number; AccessComments?: string; AddressLine1?: string; AddressLine2?: string; ContactEmail?: string; ContactTelephone1?: string; ContactTelephone2?: string; Country?: country; Distance?: number; DistanceUnit?: number; Postcode?: string; RelatedURL?: string; StateOrProvince?: string; Title?: string; Town?: string; }; BookingURL?: string; Comments?: string; ContactEmail?: string; FaultReportEmail?: string; IsPrivateIndividual?: boolean; IsRestrictedEdit?: boolean; PhonePrimaryContact?: string; PhoneSecondaryContact?: string; Title?: string; WebsiteURL?: string; }[]; StatusTypes?: { ID: number; IsOperational: boolean; IsUserSelectable: boolean; Title?: string; }[]; SubmissionStatusTypes?: { ID: number; IsLive: boolean; Title?: string; }[]; UsageTypes?: { ID: number; IsAccessKeyRequired: boolean; IsMembershipRequired: boolean; IsPayAtLocation: boolean; Title?: string; }[]; UserCommentTypes?: { ID?: number; Title?: string; }[]; }`\n  Set of core reference data used for other API results and UI\n\n  - `ChargerTypes?: { Comments: string; ID: number; IsFastChargeCapable: boolean; Title?: string; }[]`\n  - `CheckinStatusTypes?: { ID: number; IsAutomatedCheckin: boolean; IsPositive?: boolean; Title?: string; }[]`\n  - `ConnectionTypes?: { FormalName?: string; ID?: number; IsDiscontinued?: boolean; IsObsolete?: boolean; Title?: string; }[]`\n  - `Countries?: { ContinentCode: string; ID: number; ISOCode: string; Title?: string; }[]`\n  - `CurrentTypes?: { ID: number; Title?: string; }[]`\n  - `DataProviders?: { ID: number; IsRestrictedEdit: boolean; Comments?: string; DataProviderStatusType?: { ID: number; IsProviderEnabled: boolean; description?: string; }; DateLastImported?: string; IsApprovedImport?: boolean; IsOpenDataLicensed?: boolean; License?: string; Title?: string; WebsiteURL?: string; }[]`\n  - `DataTypes?: object`\n  - `MetadataGroups?: string`\n  - `Operators?: { ID: number; AddressInfo?: { CountryID: number; ID: number; Latitude: number; Longitude: number; AccessComments?: string; AddressLine1?: string; AddressLine2?: string; ContactEmail?: string; ContactTelephone1?: string; ContactTelephone2?: string; Country?: { ContinentCode: string; ID: number; ISOCode: string; Title?: string; }; Distance?: number; DistanceUnit?: number; Postcode?: string; RelatedURL?: string; StateOrProvince?: string; Title?: string; Town?: string; }; BookingURL?: string; Comments?: string; ContactEmail?: string; FaultReportEmail?: string; IsPrivateIndividual?: boolean; IsRestrictedEdit?: boolean; PhonePrimaryContact?: string; PhoneSecondaryContact?: string; Title?: string; WebsiteURL?: string; }[]`\n  - `StatusTypes?: { ID: number; IsOperational: boolean; IsUserSelectable: boolean; Title?: string; }[]`\n  - `SubmissionStatusTypes?: { ID: number; IsLive: boolean; Title?: string; }[]`\n  - `UsageTypes?: { ID: number; IsAccessKeyRequired: boolean; IsMembershipRequired: boolean; IsPayAtLocation: boolean; Title?: string; }[]`\n  - `UserCommentTypes?: { ID?: number; Title?: string; }[]`\n\n### Example\n\n```typescript\nimport Ocm from 'ocm-sdk';\n\nconst client = new Ocm();\n\nconst referencedata = await client.referencedata.retrieve();\n\nconsole.log(referencedata);\n```",
     perLanguage: {
-      cli: {
-        method: 'referencedata retrieve',
-        example: "ocm referencedata retrieve \\\n  --api-key 'My API Key'",
+      typescript: {
+        method: 'client.referencedata.retrieve',
+        example:
+          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst referencedata = await client.referencedata.retrieve();\n\nconsole.log(referencedata.DataProviders);",
       },
       go: {
         method: 'client.Referencedata.Get',
         example:
           'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/ocm-go"\n\t"github.com/stainless-sdks/ocm-go/option"\n)\n\nfunc main() {\n\tclient := ocm.NewClient(\n\t\toption.WithAPIKey("My API Key"),\n\t)\n\treferencedata, err := client.Referencedata.Get(context.TODO(), ocm.ReferencedataGetParams{})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", referencedata.DataProviders)\n}\n',
       },
-      http: {
-        example: 'curl https://api.openchargemap.io/v3/referencedata',
+      cli: {
+        method: 'referencedata retrieve',
+        example: "ocm referencedata retrieve \\\n  --api-key 'My API Key'",
       },
       php: {
         method: 'referencedata->retrieve',
         example:
           "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$referencedata = $client->referencedata->retrieve(countryid: [(object) []]);\n\nvar_dump($referencedata);",
       },
-      typescript: {
-        method: 'client.referencedata.retrieve',
-        example:
-          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst referencedata = await client.referencedata.retrieve();\n\nconsole.log(referencedata.DataProviders);",
+      http: {
+        example: 'curl https://api.openchargemap.io/v3/referencedata',
       },
     },
   },
@@ -171,27 +171,27 @@ const EMBEDDED_METHODS: MethodEntry[] = [
     markdown:
       "## authenticate\n\n`client.profile.authenticate(emailaddress?: string, password?: string): { Data: object; Metadata: object; }`\n\n**post** `/profile/authenticate`\n\nPerform user authentication, returning a model which includes the users profile and a JWT auth token to re-use in subsequent requests.\n\n### Parameters\n\n- `emailaddress?: string`\n\n- `password?: string`\n\n### Returns\n\n- `{ Data: { access_token: string; UserProfile: { DateCreated: string; ID: number; IsProfilePublic: boolean; Username: string; DateLastLogin?: string; EmailAddress?: string; Latitude?: number; Location?: string; Longitude?: number; Permissions?: string; Profile?: string; ProfileImageURL?: string; ReputationPoints?: number; WebsiteURL?: string; }; }; Metadata: { StatusCode: number; }; }`\n\n  - `Data: { access_token: string; UserProfile: { DateCreated: string; ID: number; IsProfilePublic: boolean; Username: string; DateLastLogin?: string; EmailAddress?: string; Latitude?: number; Location?: string; Longitude?: number; Permissions?: string; Profile?: string; ProfileImageURL?: string; ReputationPoints?: number; WebsiteURL?: string; }; }`\n  - `Metadata: { StatusCode: number; }`\n\n### Example\n\n```typescript\nimport Ocm from 'ocm-sdk';\n\nconst client = new Ocm();\n\nconst response = await client.profile.authenticate();\n\nconsole.log(response);\n```",
     perLanguage: {
-      cli: {
-        method: 'profile authenticate',
-        example: "ocm profile authenticate \\\n  --api-key 'My API Key'",
+      typescript: {
+        method: 'client.profile.authenticate',
+        example:
+          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst response = await client.profile.authenticate({ emailaddress: 'string', password: 'string' });\n\nconsole.log(response.Data);",
       },
       go: {
         method: 'client.Profile.Authenticate',
         example:
           'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/ocm-go"\n\t"github.com/stainless-sdks/ocm-go/option"\n)\n\nfunc main() {\n\tclient := ocm.NewClient(\n\t\toption.WithAPIKey("My API Key"),\n\t)\n\tresponse, err := client.Profile.Authenticate(context.TODO(), ocm.ProfileAuthenticateParams{\n\t\tEmailaddress: ocm.String("string"),\n\t\tPassword:     ocm.String("string"),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.Data)\n}\n',
       },
-      http: {
-        example: 'curl https://api.openchargemap.io/v3/profile/authenticate \\\n    -X POST',
+      cli: {
+        method: 'profile authenticate',
+        example: "ocm profile authenticate \\\n  --api-key 'My API Key'",
       },
       php: {
         method: 'profile->authenticate',
         example:
           "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$response = $client->profile->authenticate(\n  emailaddress: 'string', password: 'string'\n);\n\nvar_dump($response);",
       },
-      typescript: {
-        method: 'client.profile.authenticate',
-        example:
-          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst response = await client.profile.authenticate({ emailaddress: 'string', password: 'string' });\n\nconsole.log(response.Data);",
+      http: {
+        example: 'curl https://api.openchargemap.io/v3/profile/authenticate \\\n    -X POST',
       },
     },
   },
@@ -216,28 +216,28 @@ const EMBEDDED_METHODS: MethodEntry[] = [
     markdown:
       "## submit\n\n`client.comment.submit(chargePointID: number, checkinStatusTypeID?: number, comment?: string, commentTypeID?: number, rating?: number, relatedURL?: string, userName?: string): { description: string; status: string; }`\n\n**post** `/comment`\n\nSubmit a user comment or checkin for a specific charging location\n\n### Parameters\n\n- `chargePointID: number`\n  This must be a valid POI ID\n\n- `checkinStatusTypeID?: number`\n  Optional valid CheckStatusTypeID to indicate overall catgeory and success/failure to use equipment e.g. 10 = Charged Successfully.\n\n- `comment?: string`\n  This is an optional comment to describe the charging experience, may include guidance for future users.\n\n- `commentTypeID?: number`\n  This must be a valid Comment Type ID as per UserCommentTypes found in Core Reference Data. If left as null then General Comment will be used.\n\n- `rating?: number`\n  Optional integer rating between 1 = Worst, 5 = Best.\n\n- `relatedURL?: string`\n  Optional website URL for related information\n\n- `userName?: string`\n  This is an optional name to associate with the submission, for authenticated users their profile username is used.\n\n### Returns\n\n- `{ description: string; status: string; }`\n\n  - `description: string`\n  - `status: string`\n\n### Example\n\n```typescript\nimport Ocm from 'ocm-sdk';\n\nconst client = new Ocm();\n\nconst response = await client.comment.submit({ chargePointID: 0 });\n\nconsole.log(response);\n```",
     perLanguage: {
-      cli: {
-        method: 'comment submit',
-        example: "ocm comment submit \\\n  --bearer 'My Bearer' \\\n  --charge-point-id 0",
+      typescript: {
+        method: 'client.comment.submit',
+        example:
+          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  bearer: process.env['OCM_USERNAME'], // This is the default and can be omitted\n});\n\nconst response = await client.comment.submit({\n  chargePointID: 0,\n  comment: 'string',\n  rating: 3,\n  relatedURL: 'string',\n  userName: 'string',\n});\n\nconsole.log(response.description);",
       },
       go: {
         method: 'client.Comment.Submit',
         example:
           'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/ocm-go"\n\t"github.com/stainless-sdks/ocm-go/option"\n)\n\nfunc main() {\n\tclient := ocm.NewClient(\n\t\toption.WithBearer("My Bearer"),\n\t)\n\tresponse, err := client.Comment.Submit(context.TODO(), ocm.CommentSubmitParams{\n\t\tChargePointID: 0,\n\t\tComment:       ocm.String("string"),\n\t\tRating:        ocm.Int(3),\n\t\tRelatedURL:    ocm.String("string"),\n\t\tUserName:      ocm.String("string"),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", response.Description)\n}\n',
       },
-      http: {
-        example:
-          'curl https://api.openchargemap.io/v3/comment \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 0,\n          "rating": 3\n        }\'',
+      cli: {
+        method: 'comment submit',
+        example: "ocm comment submit \\\n  --bearer 'My Bearer' \\\n  --charge-point-id 0",
       },
       php: {
         method: 'comment->submit',
         example:
           "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(bearer: 'My Bearer');\n\n$response = $client->comment->submit(\n  chargePointID: 0,\n  checkinStatusTypeID: 0,\n  comment: 'string',\n  commentTypeID: 0,\n  rating: 3,\n  relatedURL: 'string',\n  userName: 'string',\n);\n\nvar_dump($response);",
       },
-      typescript: {
-        method: 'client.comment.submit',
+      http: {
         example:
-          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  bearer: process.env['OCM_USERNAME'], // This is the default and can be omitted\n});\n\nconst response = await client.comment.submit({\n  chargePointID: 0,\n  comment: 'string',\n  rating: 3,\n  relatedURL: 'string',\n  userName: 'string',\n});\n\nconsole.log(response.description);",
+          'curl https://api.openchargemap.io/v3/comment \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 0,\n          "rating": 3\n        }\'',
       },
     },
   },
@@ -254,29 +254,29 @@ const EMBEDDED_METHODS: MethodEntry[] = [
     markdown:
       "## create\n\n`client.mediaitem.create(chargePointID: number, imageDataBase64: string, comment?: string): { status: string; description?: string; }`\n\n**post** `/mediaitem`\n\nSubmit a photo for a specific charging location\n\n### Parameters\n\n- `chargePointID: number`\n  ID value for the OCM site (POI) this image relates to.\n\n- `imageDataBase64: string`\n  BASE64 encoded data\n\n- `comment?: string`\n  Optional description of image or context\n\n### Returns\n\n- `{ status: string; description?: string; }`\n\n  - `status: string`\n  - `description?: string`\n\n### Example\n\n```typescript\nimport Ocm from 'ocm-sdk';\n\nconst client = new Ocm();\n\nconst mediaitem = await client.mediaitem.create({ chargePointID: 1234, imageDataBase64: 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>' });\n\nconsole.log(mediaitem);\n```",
     perLanguage: {
-      cli: {
-        method: 'mediaitem create',
+      typescript: {
+        method: 'client.mediaitem.create',
         example:
-          "ocm mediaitem create \\\n  --bearer 'My Bearer' \\\n  --charge-point-id 1234 \\\n  --image-data-base64 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>'",
+          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  bearer: process.env['OCM_USERNAME'], // This is the default and can be omitted\n});\n\nconst mediaitem = await client.mediaitem.create({\n  chargePointID: 1234,\n  imageDataBase64: 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>',\n  comment: 'An example comment',\n});\n\nconsole.log(mediaitem.status);",
       },
       go: {
         method: 'client.Mediaitem.New',
         example:
           'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/ocm-go"\n\t"github.com/stainless-sdks/ocm-go/option"\n)\n\nfunc main() {\n\tclient := ocm.NewClient(\n\t\toption.WithBearer("My Bearer"),\n\t)\n\tmediaitem, err := client.Mediaitem.New(context.TODO(), ocm.MediaitemNewParams{\n\t\tChargePointID:   1234,\n\t\tImageDataBase64: "data:image/jpeg;base64,<BASE64_ENCODED_DATA>",\n\t\tComment:         ocm.String("An example comment"),\n\t})\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", mediaitem.Status)\n}\n',
       },
-      http: {
+      cli: {
+        method: 'mediaitem create',
         example:
-          'curl https://api.openchargemap.io/v3/mediaitem \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 1234,\n          "imageDataBase64": "data:image/jpeg;base64,<BASE64_ENCODED_DATA>"\n        }\'',
+          "ocm mediaitem create \\\n  --bearer 'My Bearer' \\\n  --charge-point-id 1234 \\\n  --image-data-base64 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>'",
       },
       php: {
         method: 'mediaitem->create',
         example:
           "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(bearer: 'My Bearer');\n\n$mediaitem = $client->mediaitem->create(\n  chargePointID: 1234,\n  imageDataBase64: 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>',\n  comment: 'An example comment',\n);\n\nvar_dump($mediaitem);",
       },
-      typescript: {
-        method: 'client.mediaitem.create',
+      http: {
         example:
-          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  bearer: process.env['OCM_USERNAME'], // This is the default and can be omitted\n});\n\nconst mediaitem = await client.mediaitem.create({\n  chargePointID: 1234,\n  imageDataBase64: 'data:image/jpeg;base64,<BASE64_ENCODED_DATA>',\n  comment: 'An example comment',\n});\n\nconsole.log(mediaitem.status);",
+          'curl https://api.openchargemap.io/v3/mediaitem \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 1234,\n          "imageDataBase64": "data:image/jpeg;base64,<BASE64_ENCODED_DATA>"\n        }\'',
       },
     },
   },
@@ -293,27 +293,27 @@ const EMBEDDED_METHODS: MethodEntry[] = [
     markdown:
       "## retrieve\n\n`client.openAPI.retrieve(): object`\n\n**get** `/openapi`\n\nRetrieve the current OpenAPI format (YAML) definition for this API. This is useful for documentation tools, mocking, testing and client generation.\n\n### Returns\n\n- `object`\n\n### Example\n\n```typescript\nimport Ocm from 'ocm-sdk';\n\nconst client = new Ocm();\n\nconst openAPI = await client.openAPI.retrieve();\n\nconsole.log(openAPI);\n```",
     perLanguage: {
-      cli: {
-        method: 'openapi retrieve',
-        example: "ocm openapi retrieve \\\n  --api-key 'My API Key'",
+      typescript: {
+        method: 'client.openAPI.retrieve',
+        example:
+          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst openAPI = await client.openAPI.retrieve();\n\nconsole.log(openAPI);",
       },
       go: {
         method: 'client.OpenAPI.Get',
         example:
           'package main\n\nimport (\n\t"context"\n\t"fmt"\n\n\t"github.com/stainless-sdks/ocm-go"\n\t"github.com/stainless-sdks/ocm-go/option"\n)\n\nfunc main() {\n\tclient := ocm.NewClient(\n\t\toption.WithAPIKey("My API Key"),\n\t)\n\topenAPI, err := client.OpenAPI.Get(context.TODO())\n\tif err != nil {\n\t\tpanic(err.Error())\n\t}\n\tfmt.Printf("%+v\\n", openAPI)\n}\n',
       },
-      http: {
-        example: 'curl https://api.openchargemap.io/v3/openapi',
+      cli: {
+        method: 'openapi retrieve',
+        example: "ocm openapi retrieve \\\n  --api-key 'My API Key'",
       },
       php: {
         method: 'openAPI->retrieve',
         example:
           "<?php\n\nrequire_once dirname(__DIR__) . '/vendor/autoload.php';\n\n$client = new Client(apiKey: 'My API Key');\n\n$openAPI = $client->openAPI->retrieve();\n\nvar_dump($openAPI);",
       },
-      typescript: {
-        method: 'client.openAPI.retrieve',
-        example:
-          "import Ocm from 'ocm-sdk';\n\nconst client = new Ocm({\n  apiKey: process.env['OCM_API_KEY'], // This is the default and can be omitted\n});\n\nconst openAPI = await client.openAPI.retrieve();\n\nconsole.log(openAPI);",
+      http: {
+        example: 'curl https://api.openchargemap.io/v3/openapi',
       },
     },
   },
