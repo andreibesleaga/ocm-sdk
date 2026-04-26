@@ -11,15 +11,14 @@ export class OpenAPI extends APIResource {
    * useful for documentation tools, mocking, testing and client generation.
    */
   retrieve(options?: RequestOptions): APIPromise<unknown> {
-    return this._client.get('/openapi', {
-      ...options,
-      headers: buildHeaders([{ Accept: 'text/plain' }, options?.headers]),
-    });
+    return this._client.get('/openapi', { ...options, headers: buildHeaders([{Accept: 'text/plain'}, options?.headers]) });
   }
 }
 
-export type OpenAPIRetrieveResponse = unknown;
+export type OpenAPIRetrieveResponse = unknown
 
 export declare namespace OpenAPI {
-  export { type OpenAPIRetrieveResponse as OpenAPIRetrieveResponse };
+  export {
+    type OpenAPIRetrieveResponse as OpenAPIRetrieveResponse
+  };
 }

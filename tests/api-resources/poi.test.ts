@@ -2,10 +2,7 @@
 
 import Ocm from 'ocm-sdk';
 
-const client = new Ocm({
-  apiKey: 'My API Key',
-  baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
-});
+const client = new Ocm({ apiKey: 'My API Key', baseURL: process.env["TEST_API_BASE_URL"] ?? 'http://127.0.0.1:4010' });
 
 describe('resource poi', () => {
   // Mock server tests are disabled
@@ -23,39 +20,36 @@ describe('resource poi', () => {
   // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
-    await expect(
-      client.poi.list(
-        {
-          boundingbox: [{}],
-          camelcase: true,
-          chargepointid: 'chargepointid',
-          client: 'client',
-          compact: true,
-          connectiontypeid: [{}],
-          countrycode: 'countrycode',
-          countryid: ['string'],
-          dataproviderid: [{}],
-          distance: 0,
-          distanceunit: 'distanceunit',
-          greaterthanid: 'greaterthanid',
-          includecomments: true,
-          latitude: 0,
-          levelid: [{}],
-          longitude: 0,
-          maxresults: 0,
-          modifiedsince: 'modifiedsince',
-          opendata: true,
-          operatorid: [{}],
-          output: 'output',
-          polygon: 'polygon',
-          polyline: 'polyline',
-          sortby: 'sortby',
-          statustypeid: [{}],
-          usagetypeid: [{}],
-          verbose: true,
-        },
-        { path: '/_stainless_unknown_path' },
-      ),
-    ).rejects.toThrow(Ocm.NotFoundError);
+    await expect(client.poi.list({
+    boundingbox: [{}],
+    camelcase: true,
+    chargepointid: 'chargepointid',
+    client: 'client',
+    compact: true,
+    connectiontypeid: [{}],
+    countrycode: 'countrycode',
+    countryid: ['string'],
+    dataproviderid: [{}],
+    distance: 0,
+    distanceunit: 'distanceunit',
+    greaterthanid: 'greaterthanid',
+    includecomments: true,
+    latitude: 0,
+    levelid: [{}],
+    longitude: 0,
+    maxresults: 0,
+    modifiedsince: 'modifiedsince',
+    opendata: true,
+    operatorid: [{}],
+    output: 'output',
+    polygon: 'polygon',
+    polyline: 'polyline',
+    sortby: 'sortby',
+    statustypeid: [{}],
+    usagetypeid: [{}],
+    verbose: true,
+  }, { path: '/_stainless_unknown_path' }))
+      .rejects
+      .toThrow(Ocm.NotFoundError);
   });
 });
