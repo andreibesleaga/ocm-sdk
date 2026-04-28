@@ -74,6 +74,6 @@ export interface CommentSubmitParams {
 export declare namespace Comment {
   export {
     type CommentSubmitResponse as CommentSubmitResponse,
-    type CommentSubmitParams as CommentSubmitParams
+    type CommentSubmitParams as CommentSubmitParams,
   };
 }

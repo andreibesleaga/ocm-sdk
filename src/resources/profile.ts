@@ -17,7 +17,10 @@ export class Profile extends APIResource {
    * });
    * ```
    */
-  authenticate(body: ProfileAuthenticateParams | null | undefined = {}, options?: RequestOptions): APIPromise<ProfileAuthenticateResponse> {
+  authenticate(
+    body: ProfileAuthenticateParams | null | undefined = {},
+    options?: RequestOptions,
+  ): APIPromise<ProfileAuthenticateResponse> {
     return this._client.post('/profile/authenticate', { body, ...options });
   }
 }
@@ -90,6 +93,6 @@ export interface ProfileAuthenticateParams {
 export declare namespace Profile {
   export {
     type ProfileAuthenticateResponse as ProfileAuthenticateResponse,
-    type ProfileAuthenticateParams as ProfileAuthenticateParams
+    type ProfileAuthenticateParams as ProfileAuthenticateParams,
   };
 }

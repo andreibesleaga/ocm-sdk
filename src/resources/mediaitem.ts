@@ -52,6 +52,6 @@ export interface MediaitemCreateParams {
 export declare namespace Mediaitem {
   export {
     type MediaitemCreateResponse as MediaitemCreateResponse,
-    type MediaitemCreateParams as MediaitemCreateParams
+    type MediaitemCreateParams as MediaitemCreateParams,
   };
 }
