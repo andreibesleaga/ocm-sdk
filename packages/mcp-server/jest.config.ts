@@ -10,9 +10,7 @@ const config: JestConfigWithTsJest = {
     '^ocm-sdk-mcp$': '<rootDir>/src/index.ts',
     '^ocm-sdk-mcp/(.*)$': '<rootDir>/src/$1',
   },
-  modulePathIgnorePatterns: [
-    '<rootDir>/dist/',
-  ],
+  modulePathIgnorePatterns: ['<rootDir>/dist/'],
   testPathIgnorePatterns: ['scripts'],
 };
 

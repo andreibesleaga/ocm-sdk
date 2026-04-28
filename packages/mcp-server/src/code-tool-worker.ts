@@ -59,8 +59,8 @@ function getTSDiagnostics(code: string): string[] {
   const codeWithImport = [
     'import { Ocm } from "ocm-sdk";',
     functionSource.type === 'declaration' ?
-      `async function run(${functionSource.client}: Ocm)` :
-      `const run: (${functionSource.client}: Ocm) => Promise<unknown> =`,
+      `async function run(${functionSource.client}: Ocm)`
+    : `const run: (${functionSource.client}: Ocm) => Promise<unknown> =`,
     functionSource.code,
   ].join('\n');
   const sourcePath = path.resolve('code.ts');
@@ -108,12 +108,12 @@ function getTSDiagnostics(code: string): string[] {
 
 const fuse = new Fuse(
   [
-    "client.poi.list",
-    "client.referencedata.retrieve",
-    "client.profile.authenticate",
-    "client.comment.submit",
-    "client.mediaitem.create",
-    "client.openAPI.retrieve"
+    'client.poi.list',
+    'client.referencedata.retrieve',
+    'client.profile.authenticate',
+    'client.comment.submit',
+    'client.mediaitem.create',
+    'client.openAPI.retrieve',
   ],
   { threshold: 1, shouldSort: true },
 );
@@ -196,7 +196,12 @@ function parseError(code: string, error: unknown): string | undefined {
     // Deno uses V8; the first "<anonymous>:LINE:COLUMN" is the top of stack.
     const lineNumber = error.stack?.match(/<anonymous>:([0-9]+):[0-9]+/)?.[1];
     // -1 for the zero-based indexing
-    const line = lineNumber && code.split('\n').at(parseInt(lineNumber, 10) - 1)?.trim();
+    const line =
+      lineNumber &&
+      code
+        .split('\n')
+        .at(parseInt(lineNumber, 10) - 1)
+        ?.trim();
     return line ? `${message}\n  at line ${lineNumber}\n    ${line}` : message;
   } catch {
     return message;
@@ -208,8 +213,9 @@ const fetch = async (req: Request): Promise<Response> => {
 
   const runFunctionSource = code ? getRunFunctionSource(code) : null;
   if (!runFunctionSource) {
-    const message = code
-      ? 'The code is missing a top-level `run` function.'
+    const message =
+      code ?
+        'The code is missing a top-level `run` function.'
       : 'The code argument is missing. Provide one containing a top-level `run` function.';
     return Response.json(
       {
@@ -254,7 +260,7 @@ const fetch = async (req: Request): Promise<Response> => {
   try {
     let run_ = async (client: any) => {};
     run_ = (await tseval(`${code}\nexport default run;`)).default;
-    const result = await run_(makeSdkProxy(client, { path: ["client"] }));
+    const result = await run_(makeSdkProxy(client, { path: ['client'] }));
     return Response.json({
       is_error: false,
       result,

@@ -16,7 +16,7 @@ export class Poi extends APIResource {
   }
 }
 
-export type PoiListResponse = Array<PoiListResponse.PoiListResponseItem>
+export type PoiListResponse = Array<PoiListResponse.PoiListResponseItem>;
 
 export namespace PoiListResponse {
   /**
@@ -1025,8 +1025,5 @@ export interface PoiListParams {
 }
 
 export declare namespace Poi {
-  export {
-    type PoiListResponse as PoiListResponse,
-    type PoiListParams as PoiListParams
-  };
+  export { type PoiListResponse as PoiListResponse, type PoiListParams as PoiListParams };
 }
