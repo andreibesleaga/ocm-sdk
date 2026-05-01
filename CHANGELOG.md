@@ -1,5 +1,21 @@
 # Changelog
 
+## 0.15.0-beta (2026-05-01)
+
+Full Changelog: [v0.14.11-beta...v0.15.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.11-beta...v0.15.0-beta)
+
+### Features
+
+* support setting headers via env ([53b42f0](https://github.com/andreibesleaga/ocm-sdk/commit/53b42f09c732ddfd915a1f75cb8647f0b0666046))
+
+
+### Chores
+
+* avoid formatting file that gets changed during releases ([dafff46](https://github.com/andreibesleaga/ocm-sdk/commit/dafff46c4df9c0f9734fabe1f2fba6d63abbf3d2))
+* **format:** run eslint and prettier separately ([da0f33a](https://github.com/andreibesleaga/ocm-sdk/commit/da0f33af7c8faa24d7b443652542bb8ce49f1a6f))
+* **internal:** codegen related update ([96de50c](https://github.com/andreibesleaga/ocm-sdk/commit/96de50c0502ee7d6d8a1f11a1aba18a22e56d1a8))
+* **internal:** fix MCP cloudflare worker builds ([4ddaf23](https://github.com/andreibesleaga/ocm-sdk/commit/4ddaf23ebb56e4b078f5e6ff77ded4b0375a25aa))
+
 ## 0.14.11-beta (2026-04-26)
 
 Full Changelog: [v0.14.10-beta...v0.14.11-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.10-beta...v0.14.11-beta)
