@@ -1,36 +1,48 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { IncomingMessage } from 'node:http'
-import { ClientOptions } from 'ocm-sdk'
+import { IncomingMessage } from 'node:http';
+import { ClientOptions } from 'ocm-sdk';
 import { McpOptions } from './options';
 
-export const parseClientAuthHeaders = (req: IncomingMessage, required?: boolean): Partial<ClientOptions> => { if (req.headers.authorization) {
-  const scheme = req.headers.authorization.split(" ")[0]!;
-  const value = req.headers.authorization.slice(scheme.length + 1);
-  switch (scheme) {
-    case 'Bearer':
-     return { bearer: req.headers.authorization.slice("Bearer ".length) };
-    default:
-      throw new Error('Unsupported authorization scheme. Expected the "Authorization" header to be a supported scheme (Bearer).');
+export const parseClientAuthHeaders = (req: IncomingMessage, required?: boolean): Partial<ClientOptions> => {
+  if (req.headers.authorization) {
+    const scheme = req.headers.authorization.split(' ')[0]!;
+    const value = req.headers.authorization.slice(scheme.length + 1);
+    switch (scheme) {
+      case 'Bearer':
+        return { bearer: req.headers.authorization.slice('Bearer '.length) };
+      default:
+        throw new Error(
+          'Unsupported authorization scheme. Expected the "Authorization" header to be a supported scheme (Bearer).',
+        );
+    }
+  } else if (required) {
+    throw new Error('Missing required Authorization header; see WWW-Authenticate header for details.');
   }
-} else if (required) {
-  throw new Error('Missing required Authorization header; see WWW-Authenticate header for details.');
-}
 
-const apiKey = Array.isArray(req.headers['x-ocm-api-key']) ? req.headers['x-ocm-api-key'][0] : req.headers['x-ocm-api-key']
-const apiKeyHeader = Array.isArray(req.headers['x-api-key']) ? req.headers['x-api-key'][0] : req.headers['x-api-key']
-const bearer = Array.isArray(req.headers['x-ocm-username']) ? req.headers['x-ocm-username'][0] : req.headers['x-ocm-username']
-return {apiKey, apiKeyHeader, bearer}; }
+  const apiKey =
+    Array.isArray(req.headers['x-ocm-api-key']) ?
+      req.headers['x-ocm-api-key'][0]
+    : req.headers['x-ocm-api-key'];
+  const apiKeyHeader =
+    Array.isArray(req.headers['x-api-key']) ? req.headers['x-api-key'][0] : req.headers['x-api-key'];
+  const bearer =
+    Array.isArray(req.headers['x-ocm-username']) ?
+      req.headers['x-ocm-username'][0]
+    : req.headers['x-ocm-username'];
+  return { apiKey, apiKeyHeader, bearer };
+};
 
 export const getStainlessApiKey = (req: IncomingMessage, mcpOptions: McpOptions): string | undefined => {
   // Try to get the key from the x-stainless-api-key header
-  const headerKey = Array.isArray(req.headers['x-stainless-api-key']) ?
-    req.headers['x-stainless-api-key'][0]
-  : req.headers['x-stainless-api-key'];
+  const headerKey =
+    Array.isArray(req.headers['x-stainless-api-key']) ?
+      req.headers['x-stainless-api-key'][0]
+    : req.headers['x-stainless-api-key'];
   if (headerKey && typeof headerKey === 'string') {
     return headerKey;
   }
 
   // Fall back to value set in the mcpOptions (e.g. from environment variable), if provided
   return mcpOptions.stainlessApiKey;
-}
+};

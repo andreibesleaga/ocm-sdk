@@ -14,7 +14,10 @@ export class Referencedata extends APIResource {
    * results in the lighter non-verbose mode, then hydrating POI results back into
    * complex objects.
    */
-  retrieve(query: ReferencedataRetrieveParams | null | undefined = {}, options?: RequestOptions): APIPromise<ReferencedataRetrieveResponse> {
+  retrieve(
+    query: ReferencedataRetrieveParams | null | undefined = {},
+    options?: RequestOptions,
+  ): APIPromise<ReferencedataRetrieveResponse> {
     return this._client.get('/referencedata', { query, ...options });
   }
 }
@@ -466,6 +469,6 @@ export declare namespace Referencedata {
   export {
     type Country as Country,
     type ReferencedataRetrieveResponse as ReferencedataRetrieveResponse,
-    type ReferencedataRetrieveParams as ReferencedataRetrieveParams
+    type ReferencedataRetrieveParams as ReferencedataRetrieveParams,
   };
 }
