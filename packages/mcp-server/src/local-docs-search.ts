@@ -237,7 +237,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       },
       http: {
         example:
-          'curl https://api.openchargemap.io/v3/comment \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 0,\n          "rating": 3\n        }\'',
+          'curl https://api.openchargemap.io/v3/comment \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 0,\n          "checkinStatusTypeID": 0,\n          "comment": "string",\n          "commentTypeID": 0,\n          "rating": 3,\n          "relatedURL": "string",\n          "userName": "string"\n        }\'',
       },
     },
   },
@@ -276,7 +276,7 @@ const EMBEDDED_METHODS: MethodEntry[] = [
       },
       http: {
         example:
-          'curl https://api.openchargemap.io/v3/mediaitem \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 1234,\n          "imageDataBase64": "data:image/jpeg;base64,<BASE64_ENCODED_DATA>"\n        }\'',
+          'curl https://api.openchargemap.io/v3/mediaitem \\\n    -H \'Content-Type: application/json\' \\\n    -H "Authorization: Bearer $OCM_USERNAME" \\\n    -d \'{\n          "chargePointID": 1234,\n          "imageDataBase64": "data:image/jpeg;base64,<BASE64_ENCODED_DATA>",\n          "comment": "An example comment"\n        }\'',
       },
     },
   },
