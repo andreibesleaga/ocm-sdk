@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.15.1-beta (2026-05-07)
+
+Full Changelog: [v0.15.0-beta...v0.15.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.0-beta...v0.15.1-beta)
+
+### Documentation
+
+* update http mcp docs ([7e9b039](https://github.com/andreibesleaga/ocm-sdk/commit/7e9b039794f7d3c941b6a5687d7263b3750b3589))
+
 ## 0.15.0-beta (2026-05-06)
 
 Full Changelog: [v0.14.11-beta...v0.15.0-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.14.11-beta...v0.15.0-beta)
