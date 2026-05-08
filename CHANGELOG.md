@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.15.2-beta (2026-05-08)
+
+Full Changelog: [v0.15.1-beta...v0.15.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.1-beta...v0.15.2-beta)
+
+### Chores
+
+* redact api-key headers in debug logs ([c6c762b](https://github.com/andreibesleaga/ocm-sdk/commit/c6c762b1be0bee6411f5d0879d748eee57947d7c))
+
 ## 0.15.1-beta (2026-05-07)
 
 Full Changelog: [v0.15.0-beta...v0.15.1-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.0-beta...v0.15.1-beta)
