@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.15.3-beta (2026-05-13)
+
+Full Changelog: [v0.15.2-beta...v0.15.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.2-beta...v0.15.3-beta)
+
 ## 0.15.2-beta (2026-05-08)
 
 Full Changelog: [v0.15.1-beta...v0.15.2-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.1-beta...v0.15.2-beta)
