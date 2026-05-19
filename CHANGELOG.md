@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.15.4-beta (2026-05-19)
+
+Full Changelog: [v0.15.3-beta...v0.15.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.3-beta...v0.15.4-beta)
+
+### Bug Fixes
+
+* **typescript:** upgrade tsc-multi so that it works with Node 26 ([df5e9fa](https://github.com/andreibesleaga/ocm-sdk/commit/df5e9facd804847d84c8bbfa9a158f084921da8d))
+
+
+### Chores
+
+* **tests:** remove redundant File import ([e0a8b2f](https://github.com/andreibesleaga/ocm-sdk/commit/e0a8b2f0dd67efc38962699319a200e8ff284c69))
+
 ## 0.15.3-beta (2026-05-13)
 
 Full Changelog: [v0.15.2-beta...v0.15.3-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.2-beta...v0.15.3-beta)
