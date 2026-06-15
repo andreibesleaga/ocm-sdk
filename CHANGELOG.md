@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.15.5-beta (2026-05-29)
+
+Full Changelog: [v0.15.4-beta...v0.15.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.4-beta...v0.15.5-beta)
+
+### Bug Fixes
+
+* **mcp:** use `pure-lockfile` when building mcp server ([88e7ffe](https://github.com/andreibesleaga/ocm-sdk/commit/88e7ffe4cdc976fec9609db41650b8d0525efc3a))
+
+
+### Chores
+
+* **internal:** codegen related update ([434b59e](https://github.com/andreibesleaga/ocm-sdk/commit/434b59e240b59724938ce06cb9776ef407f45ef6))
+
 ## 0.15.4-beta (2026-05-19)
 
 Full Changelog: [v0.15.3-beta...v0.15.4-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.3-beta...v0.15.4-beta)
