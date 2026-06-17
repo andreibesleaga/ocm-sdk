@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.15.6-beta (2026-06-17)
+
+Full Changelog: [v0.15.5-beta...v0.15.6-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.5-beta...v0.15.6-beta)
+
+### Bug Fixes
+
+* **client:** send content-type header for requests with an omitted optional body ([778787c](https://github.com/andreibesleaga/ocm-sdk/commit/778787c2b96a0bcd48d3a29f1d6291871d03059e))
+
 ## 0.15.5-beta (2026-05-29)
 
 Full Changelog: [v0.15.4-beta...v0.15.5-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.4-beta...v0.15.5-beta)
