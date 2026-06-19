@@ -67,7 +67,7 @@ const INSTRUCTIONS_FETCH_TIMEOUT_MS = 5000;
 
 function fallbackMcpServer(): McpServer {
   return new McpServer(
-    { name: 'ocm_sdk_api', version: '0.15.5-beta' },
+    { name: 'ocm_sdk_api', version: '0.15.6-beta' },
     { capabilities: { tools: {}, logging: {} } },
   );
 }
