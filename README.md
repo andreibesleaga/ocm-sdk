@@ -12,6 +12,7 @@ The REST API documentation can be found on [openchargemap.org](https://opencharg
 
 Demo project: https://github.com/andreibesleaga/ocm-demo
 Live Demo URL: https://ocm-demo.up.railway.app/
+API Reference: https://andreibesleaga.github.io/ocm-api-reference/api.html
 
 ## MCP Server
 
