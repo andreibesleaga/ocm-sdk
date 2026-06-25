@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.15.9-beta (2026-06-25)
+
+Full Changelog: [v0.15.8-beta...v0.15.9-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.8-beta...v0.15.9-beta)
+
+### Bug Fixes
+
+* **ci:** align tests with query apiKey auth and format SKILL.md ([fd22c1e](https://github.com/andreibesleaga/ocm-sdk/commit/fd22c1e3064451cc19557c4711c4925dda0fc159))
+
 ## 0.15.8-beta (2026-06-25)
 
 Full Changelog: [v0.15.7-beta...v0.15.8-beta](https://github.com/andreibesleaga/ocm-sdk/compare/v0.15.7-beta...v0.15.8-beta)
