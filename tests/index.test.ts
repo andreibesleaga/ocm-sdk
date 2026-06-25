@@ -202,7 +202,9 @@ describe('instantiate client', () => {
         defaultQuery: { apiVersion: 'foo' },
         apiKey: 'My API Key',
       });
-      expect(client.buildURL('/foo', null)).toEqual('http://localhost:5000/foo?apiVersion=foo');
+      expect(client.buildURL('/foo', null)).toEqual(
+        'http://localhost:5000/foo?key=My%20API%20Key&apiVersion=foo',
+      );
     });
 
     test('multiple default query params', () => {
@@ -211,7 +213,9 @@ describe('instantiate client', () => {
         defaultQuery: { apiVersion: 'foo', hello: 'world' },
         apiKey: 'My API Key',
       });
-      expect(client.buildURL('/foo', null)).toEqual('http://localhost:5000/foo?apiVersion=foo&hello=world');
+      expect(client.buildURL('/foo', null)).toEqual(
+        'http://localhost:5000/foo?key=My%20API%20Key&apiVersion=foo&hello=world',
+      );
     });
 
     test('overriding with `undefined`', () => {
@@ -220,7 +224,9 @@ describe('instantiate client', () => {
         defaultQuery: { hello: 'world' },
         apiKey: 'My API Key',
       });
-      expect(client.buildURL('/foo', { hello: undefined })).toEqual('http://localhost:5000/foo');
+      expect(client.buildURL('/foo', { hello: undefined })).toEqual(
+        'http://localhost:5000/foo?key=My%20API%20Key',
+      );
     });
   });
 
@@ -238,7 +244,7 @@ describe('instantiate client', () => {
     });
 
     const response = await client.get('/foo');
-    expect(response).toEqual({ url: 'http://localhost:5000/foo', custom: true });
+    expect(response).toEqual({ url: 'http://localhost:5000/foo?key=My%20API%20Key', custom: true });
   });
 
   test('explicit global fetch', async () => {
@@ -296,12 +302,16 @@ describe('instantiate client', () => {
   describe('baseUrl', () => {
     test('trailing slash', () => {
       const client = new Ocm({ baseURL: 'http://localhost:5000/custom/path/', apiKey: 'My API Key' });
-      expect(client.buildURL('/foo', null)).toEqual('http://localhost:5000/custom/path/foo');
+      expect(client.buildURL('/foo', null)).toEqual(
+        'http://localhost:5000/custom/path/foo?key=My%20API%20Key',
+      );
     });
 
     test('no trailing slash', () => {
       const client = new Ocm({ baseURL: 'http://localhost:5000/custom/path', apiKey: 'My API Key' });
-      expect(client.buildURL('/foo', null)).toEqual('http://localhost:5000/custom/path/foo');
+      expect(client.buildURL('/foo', null)).toEqual(
+        'http://localhost:5000/custom/path/foo?key=My%20API%20Key',
+      );
     });
 
     afterEach(() => {
@@ -334,14 +344,14 @@ describe('instantiate client', () => {
     test('in request options', () => {
       const client = new Ocm({ apiKey: 'My API Key' });
       expect(client.buildURL('/foo', null, 'http://localhost:5000/option')).toEqual(
-        'http://localhost:5000/option/foo',
+        'http://localhost:5000/option/foo?key=My%20API%20Key',
       );
     });
 
     test('in request options overridden by client options', () => {
       const client = new Ocm({ apiKey: 'My API Key', baseURL: 'http://localhost:5000/client' });
       expect(client.buildURL('/foo', null, 'http://localhost:5000/option')).toEqual(
-        'http://localhost:5000/client/foo',
+        'http://localhost:5000/client/foo?key=My%20API%20Key',
       );
     });
 
@@ -349,7 +359,7 @@ describe('instantiate client', () => {
       process.env['OCM_BASE_URL'] = 'http://localhost:5000/env';
       const client = new Ocm({ apiKey: 'My API Key' });
       expect(client.buildURL('/foo', null, 'http://localhost:5000/option')).toEqual(
-        'http://localhost:5000/env/foo',
+        'http://localhost:5000/env/foo?key=My%20API%20Key',
       );
     });
   });
@@ -402,7 +412,9 @@ describe('instantiate client', () => {
       });
 
       // Test inherited options remain the same
-      expect(newClient.buildURL('/foo', null)).toEqual('http://localhost:5001/foo?test-param=test-value');
+      expect(newClient.buildURL('/foo', null)).toEqual(
+        'http://localhost:5001/foo?key=My%20API%20Key&test-param=test-value',
+      );
 
       const { req } = await newClient.buildRequest({ path: '/foo', method: 'get' });
       expect(req.headers.get('x-test-header')).toEqual('test-value');
@@ -435,7 +447,7 @@ describe('instantiate client', () => {
       expect(client.maxRetries).not.toEqual(10);
 
       // Verify URL building uses the updated baseURL
-      expect(newClient.buildURL('/bar', null)).toEqual('http://localhost:6000/bar');
+      expect(newClient.buildURL('/bar', null)).toEqual('http://localhost:6000/bar?key=My%20API%20Key');
     });
   });
 

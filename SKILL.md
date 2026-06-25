@@ -1,8 +1,9 @@
 ---
-name: ocm-sdk 
+name: ocm-sdk
 description: How to use the ocm SDK. For access to more information, try out the ocm MCP server.
 ---
-```markdown
+
+````markdown
 # OCM TypeScript SDK Guide
 
 The Open Charge Map (OCM) SDK provides access to a global database of EV charging stations. Use it to find charging locations, get network operator details, submit user feedback, and upload photos.
@@ -18,7 +19,7 @@ const stations = await client.poi.list({
   longitude: -0.1278,
   distance: 10,
   distanceunit: 'km',
-  maxresults: 50
+  maxresults: 50,
 });
 
 // Filter by connection type, operator, or status
@@ -27,7 +28,7 @@ const dcFastChargers = await client.poi.list({
   longitude: -122.4194,
   connectiontypeid: [33], // CCS Type 2
   levelid: [3], // DC fast charging
-  statustypeid: [50] // Operational only
+  statustypeid: [50], // Operational only
 });
 
 // Access station details
@@ -37,6 +38,7 @@ console.log(station.AddressInfo?.Latitude, station.AddressInfo?.Longitude);
 console.log(station.NumberOfPoints); // Number of charging bays
 console.log(station.Connections); // Equipment specs (kW, connector type, etc)
 ```
+````
 
 ### Getting Reference Data
 
@@ -59,7 +61,7 @@ await client.comment.submit({
   checkinStatusTypeID: 10, // Successfully charged
   comment: 'Fast charging, easy to find. All bays working.',
   rating: 5,
-  userName: 'TestUser'
+  userName: 'TestUser',
 });
 ```
 
@@ -70,7 +72,7 @@ await client.comment.submit({
 await client.mediaitem.create({
   chargePointID: 12345,
   imageDataBase64: 'data:image/jpeg;base64,/9j/4AAQSkZJRg...',
-  comment: 'Entrance view'
+  comment: 'Entrance view',
 });
 ```
 
@@ -80,7 +82,7 @@ await client.mediaitem.create({
 // Authenticate to get access token
 const auth = await client.profile.authenticate({
   emailaddress: 'user@example.com',
-  password: 'password123'
+  password: 'password123',
 });
 
 const token = auth.Data.access_token;
@@ -112,7 +114,10 @@ await client.poi.list({ verbose: true, includecomments: true });
 
 // Search by bounding box
 await client.poi.list({
-  boundingbox: [[51.5, -0.2], [51.4, -0.1]]
+  boundingbox: [
+    [51.5, -0.2],
+    [51.4, -0.1],
+  ],
 });
 
 // Filter to open data only
@@ -121,4 +126,7 @@ await client.poi.list({ opendata: true });
 // Search by country
 await client.poi.list({ countrycode: 'US', maxresults: 200 });
 ```
+
+```
+
 ```
